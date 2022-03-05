@@ -20,13 +20,7 @@ const Home = () =>{
         )
     }else{
         return(
-
-
-
-
-
-
-            <div className='paginaHome'>
+            <div className='paginaHome' >
                 <div className='parteIzquierda'>
                     <h1 className='letreroPrincipal'>BIENVENID@ A NUESTRA PAGINA WEB DE PELICULAS ONLINE</h1>
                 </div>
@@ -39,19 +33,10 @@ const Home = () =>{
                         Ir a Login
                         </div>
                 </div>
-                
                 </div>
             </div>
-
-
-
-
-
-
-
-
         )
     }
-}
+};
 
 export default Home;

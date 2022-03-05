@@ -7,6 +7,18 @@
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor3{
+    background-color: #c0c0c0;
+    height: 60em;
+    width: 70em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column ;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #555a40;
 }

@@ -67,7 +67,7 @@ const Login = () => {
     const irAregistro = () => {
         setTimeout( ()=> {
             navigate('/registro');
-        }, 1000);
+        }, 500);
     }
     // 2 - Render (Lo que pinta en Pantalla).
     if(credenciales?.token !== undefined){
@@ -83,7 +83,7 @@ const Login = () => {
                         {/* {<pre>{JSON.stringify(datosUsuario, null,2)}</pre>} */}
                         <div className='inputs'>
                             <input className='input' type="email" name="email" id="email" title="email" placeholder="Correo Electrónico" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
-                            <input className='input' type="contraseña" name="contraseña" id="contraseña" title="contraseña" placeholder="Contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e); checkContraseña(e)}}/>
+                            <input className='input' type="password" name="password" id="contraseña" title="contraseña" placeholder="Contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e); checkContraseña(e)}}/>
                             {msgError}
                             {msgError2}
                         </div>

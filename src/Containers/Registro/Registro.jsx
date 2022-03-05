@@ -28,7 +28,7 @@ const Registro = () => {
         setDatosUsuario({...datosUsuario,[e.target.nombre]: e.target.value})
     };
     // Funciones Locales del Componente.
-    const registrarme = async ()=> {
+    const registrame = async ()=> {
         // Array de distintos campos.
         setMsgError('');
         let error = '';
@@ -72,8 +72,23 @@ const Registro = () => {
     }
     return(
         <div className='paginaRegistro'>
-
+            <div className='contenedor3'>
+                    <h2 className='Letras'>Introduce tus datos aqui</h2>
+                    <input className='input' type="text" name="nombre" id="nombre" title="nombre" placeholder="Nombre:" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                    <input className='input' type="text" name="apellido" id="apellido" title="apellido" placeholder="Apellidos:" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                    <input className='input' type="text" name="edad" id="edad" title="edad" placeholder="Edad:" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                    <input className='input' type="email" name="email" id="email" title="email" placeholder="Correo Electrónico:" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                    <input className='input' type="text" name="dni" id="dni" title="dni" placeholder="DNI" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                    <input className='input' type="password" name="password" id="password" title="password" placeholder="Contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                    <input className='input' type="password" name="password2" id="password2" title="password2" placeholder="Repite contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                    <input className='input' type="text" name="telefono" id="telefono" title="telefono" placeholder="Telefono" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                    <input className='input' type="text" name="numCuenta" id="numCuenta" title="numCuenta" placeholder="NºCuenta" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                    <div className="boton" onClick={()=>registrame()}>
+                        Registrarme
+                    </div>
+                    {msgError}
             </div>
+        </div>
     )
 }
 

@@ -10,6 +10,7 @@
     background-size: cover;
     user-select: none;
 }
+
 .botonLogin {
     height: 3em;
     width: 20em;
@@ -21,10 +22,16 @@
     font-weight:bold;
     cursor: pointer;
 }
+
 .botonLogin:hover{
-    background-color: #886215;
+    background-color: #555a40;
 }
-/* background-color: #114358; */
+
+.Letras{
+    color: #6c7059;
+    font-family: fantasy;
+}
+
 .parteDerecha{
     background-color: transparent;
     height: 76em;
@@ -33,6 +40,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .contenedor{
     background-color: #c0c0c0;
     height: 30em;
@@ -42,10 +50,12 @@
     justify-content: space-around;
     flex-direction: column ;
     border-radius: 25px;
+    border-style: solid;
+    border-color: #555a40;
 }
 
 .contenedorCartel{
-    background-color: aliceblue;
+    background-color: transparent;
     height: 15em;
     width: 25em;
 }
@@ -55,3 +65,16 @@
     height: 76em;
     width: 76em;
 }
+
+.letreroPrincipal{
+    margin-left: 1em;
+    font-size: 6em;
+    color: #c0c0c0;
+    font-family: fantasy;
+    white-space: nowrap;
+}
+
+
+
+
+

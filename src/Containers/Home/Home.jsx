@@ -27,13 +27,14 @@ const Home = () =>{
 
 
             <div className='paginaHome'>
-
                 <div className='parteIzquierda'>
-                    
+                    <h1 className='letreroPrincipal'>BIENVENID@ A NUESTRA PAGINA WEB DE PELICULAS ONLINE</h1>
                 </div>
                 <div className='parteDerecha'>
                     <div className='contenedor'>
-                        <div className='contenedorCartel'></div>
+                        <div className='contenedorCartel'>
+                            <h1 class='Letras'>Para poder acceder al contenido debes logearte primero.</h1>
+                        </div>
                         <div className='botonLogin' onClick={ () => irAlogin()}>
                         Ir a Login
                         </div>
@@ -41,7 +42,6 @@ const Home = () =>{
                 
                 </div>
             </div>
-                // Hola, Disculpa pero para acceder a las Peliculas debes Logearte primero....
 
 
 

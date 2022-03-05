@@ -10,7 +10,7 @@ const Home = () =>{
     const irAlogin = () => {
         setTimeout( () => {
             navigate('/login');
-        },2000)
+        },500)
     }
     if(credenciales?.datosUsuario?.token !== undefined){
         return(
@@ -20,12 +20,36 @@ const Home = () =>{
         )
     }else{
         return(
+
+
+
+
+
+
             <div className='paginaHome'>
-                Hola, Disculpa pero para acceder a las Peliculas debes Logearte primero....
-                <div className='botonHome' onClick={ () => irAlogin()}>
-                    Ir a Login
+
+                <div className='parteIzquierda'>
+                    
+                </div>
+                <div className='parteDerecha'>
+                    <div className='contenedor'>
+                        <div className='contenedorCartel'></div>
+                        <div className='botonLogin' onClick={ () => irAlogin()}>
+                        Ir a Login
+                        </div>
+                </div>
+                
                 </div>
             </div>
+                // Hola, Disculpa pero para acceder a las Peliculas debes Logearte primero....
+
+
+
+
+
+
+
+
         )
     }
 }

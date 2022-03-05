@@ -29,8 +29,8 @@ const Home = () =>{
                         <div className='contenedorCartel'>
                             <h1 class='Letras'>Para poder acceder al contenido debes logearte primero.</h1>
                         </div>
-                        <div className='botonLogin' onClick={ () => irAlogin()}>
-                        Ir a Login
+                        <div className='boton' onClick={ () => irAlogin()}>
+                            Ir a Login
                         </div>
                 </div>
                 </div>

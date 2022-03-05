@@ -11,7 +11,7 @@
     user-select: none;
 }
 
-.botonLogin {
+.boton {
     height: 3em;
     width: 20em;
     background-color: #6c7059;
@@ -23,7 +23,7 @@
     cursor: pointer;
 }
 
-.botonLogin:hover{
+.boton:hover{
     background-color: #555a40;
 }
 

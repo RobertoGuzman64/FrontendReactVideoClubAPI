@@ -79,15 +79,20 @@ const Login = () => {
             <div className='paginaLogin'>
                 <div className='parteIzquierda1'>
                     <div className='contenedor1'>
-                    {<pre>{JSON.stringify(datosUsuario, null,2)}</pre>}
-                    <input type="email" name="email" id="email" title="email" placeholder="Correo Electrónico" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
-                    <input type="contraseña" name="contraseña" id="contraseña" title="contraseña" placeholder="Contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e); checkContraseña(e)}}/>
-                    {msgError}
-                    {msgError2}
-                    <div className="botonLogin" onClick={()=>Login()}>INICIAR SESION</div>
-                    En caso de no estar registrad@, HAZLO!!!!!!
-                    <div className='botonLogin' onClick={()=>irAregistro()}>
-                    REGISTRARSE
+                        <h1 className='Letras'>Introduce tus datos</h1>
+                        {/* {<pre>{JSON.stringify(datosUsuario, null,2)}</pre>} */}
+                        <div className='inputs'>
+                            <input className='input' type="email" name="email" id="email" title="email" placeholder="Correo Electrónico" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                            <input className='input' type="contraseña" name="contraseña" id="contraseña" title="contraseña" placeholder="Contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e); checkContraseña(e)}}/>
+                            {msgError}
+                            {msgError2}
+                        </div>
+                    <div className='contenedor2'>
+                        <div className="boton" onClick={()=>Login()}>INICIAR SESION</div>
+                            En caso de no estar registrad@
+                        <div className='boton' onClick={()=>irAregistro()}>
+                            REGISTRATE
+                    </div>
                     </div>
                     </div>
                 </div>

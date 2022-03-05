@@ -24,7 +24,7 @@
     width: 30em;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column ;
     border-radius: 25px;
     border-style: solid;
@@ -34,4 +34,24 @@
     background-color: transparent;
     height: 76em;
     width: 76em;
+}
+
+.input{
+    all:unset;
+    text-align: left;
+    border: 2px solid #555a40;
+    border-bottom: 2px 2px;
+    padding: 0.25em;
+    width: 80%;
+    margin: 0.5em 0;
+}
+
+.contenedor2{
+    background-color: transparent;
+    height: 10em;
+    width: 30em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
 }

@@ -61,7 +61,7 @@ const Registro = () => {
         console.log('Le LLaman Body', body);
         // 3 Envio desde AXIOS.
         try {
-            let resultado = await axios.post('',body);
+            let resultado = await axios.post('',body);                                   // AQUI ES DONDE VA EL ENDPOINT DEL BACKEND.
             console.log(resultado)
                 setTimeout( ()=> {
                     navigate('/login');

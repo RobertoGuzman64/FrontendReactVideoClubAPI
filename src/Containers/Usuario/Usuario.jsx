@@ -7,7 +7,22 @@ import React from 'react';
 const Usuario = () => {
     return(
         <div className='paginaUsuario'>
-            <h1 class="Cartel">SOY LA PAGINA Usuario</h1>
+            <div className='lateral'>
+                <div className='containerLogo'>
+                    <div className='logo'></div>
+                </div>
+                <div className='containerEndpoints'>
+                    <div className='endpointLateral'></div>
+                    <div className='endpointLateral'></div>
+                    <div className='endpointLateral'></div>
+                    <div className='endpointLateral'></div>
+                    <div className='endpointLateral'></div>
+                </div>
+            </div>
+            <div className='centro'>
+                <h1 className='Letras1'>BIENVENIDO A TU AREA PERSONAL</h1>
+                <div className='endpointsCentro'></div>
+            </div>
         </div>
     )
 };

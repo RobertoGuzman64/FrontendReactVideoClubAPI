@@ -53,7 +53,7 @@ const Login = () => {
                 email: datosUsuario.email,
                 contraseña: datosUsuario.contraseña
             }
-            let resultado = await axios.post(''.body);
+            let resultado = await axios.post(''.body);                                                  // AQUI ES DONDE VA EL ENDPOINT DEL BACKEND.
             // Cambiamos el valor del Hook credenciales, por lo tanto recargará el componente.
             if(resultado.data === 'Usuario o contraseña inválido'){
                 setMsgError2('Usuario o contraseña inválido')

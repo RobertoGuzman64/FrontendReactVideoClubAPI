@@ -5,6 +5,24 @@
     background-color: cadetblue;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: center;
+}
+
+.logo2{
+    background-image: url(/img/logo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 8em;
+    width: 8em;
+    border-style: solid;
+    border-color: #555a40;
+}
+
+.centro2{
+    background-image: url(/img/admin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 76.8em;
+    width: 129em;
 }

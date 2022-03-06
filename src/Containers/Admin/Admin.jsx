@@ -6,8 +6,23 @@ import React from 'react';
 
 const Admin = () => {
     return(
-        <div className='pantallaAdmin'>
-            <h1 class="Cartel">SOY LA PAGINA ADMIN</h1>
+        <div className='paginaAdmin'>
+            <div className='lateral'>
+                <div className='containerLogo'>
+                    <div className='logo2'></div>
+                </div>
+                <div className='containerEndpoints'>
+                    <div className='endpointLateral'></div>
+                    <div className='endpointLateral'></div>
+                    <div className='endpointLateral'></div>
+                    <div className='endpointLateral'></div>
+                    <div className='endpointLateral'></div>
+                </div>
+            </div>
+            <div className='centro2'>
+                <h1 className='Letras1'>BIENVENIDO A TU AREA DE ADMINISTRADOR</h1>
+                <div className='endpointsCentro'></div>
+            </div>
         </div>
     )
 };

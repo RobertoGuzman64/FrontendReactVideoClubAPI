@@ -53,7 +53,8 @@ const Login = () => {
                 email: datosUsuario.email,
                 contraseña: datosUsuario.contraseña
             }
-            let resultado = await axios.post(''.body);                                                  // AQUI ES DONDE VA EL ENDPOINT DEL BACKEND.
+            console.log(body)
+            let resultado = await axios.post("http://localhost:5000/usuarios/login", body);                          // AQUI ES DONDE VA EL ENDPOINT DEL BACKEND.
             // Cambiamos el valor del Hook credenciales, por lo tanto recargará el componente.
             if(resultado.data === 'Usuario o contraseña inválido'){
                 setMsgError2('Usuario o contraseña inválido')
@@ -83,15 +84,15 @@ const Login = () => {
                         {/* {<pre>{JSON.stringify(datosUsuario, null,2)}</pre>} */}
                         <div className='inputs'>
                             <input className='input' type="email" name="email" id="email" title="email" placeholder="Correo Electrónico" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
-                            <input className='input' type="password" name="password" id="contraseña" title="contraseña" placeholder="Contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e); checkContraseña(e)}}/>
-                            {msgError}
-                            {msgError2}
+                            <input className='input' type="password" name="contraseña" id="contraseña" title="contraseña" placeholder="Contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e); checkContraseña(e)}}/>
                         </div>
+                        {msgError}
+                        {msgError2}
                     <div className='contenedor2'>
                         <div className="boton" onClick={()=>Login()}>INICIAR SESION</div>
                             En caso de no estar registrad@
                         <div className='boton' onClick={()=>irAregistro()}>
-                            REGISTRATE
+                            REGISTRATÉ
                     </div>
                     </div>
                     </div>

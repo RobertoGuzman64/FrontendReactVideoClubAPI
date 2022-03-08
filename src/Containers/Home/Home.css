@@ -3,8 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-image: url(/img/home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,7 +71,7 @@
     font-size: 6em;
     color: #c0c0c0;
     font-family: fantasy;
-    white-space: nowrap;
+    white-space: nowrap;/* ESTO HACE QUE LAS LETRAS SE SALGAN DEL DIV */
 }
 
 

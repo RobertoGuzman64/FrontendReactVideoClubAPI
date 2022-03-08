@@ -22,7 +22,7 @@ const Home = () =>{
         return(
             <div className='paginaHome' >
                 <div className='parteIzquierda'>
-                    <h1 className='letreroPrincipal'>BIENVENID@ A NUESTRA PAGINA WEB DE PELICULAS ONLINE</h1>
+                    <h1 className='letreroPrincipal'>BIENVENID@ A NUESTRA PAGINA WEB</h1>
                 </div>
                 <div className='parteDerecha'>
                     <div className='contenedor'>

@@ -3,8 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-image: url(/img/login.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,6 +36,14 @@
     width: 76em;
 }
 
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    all:unset;
+}
+
 .input{
     all:unset;
     text-align: left;
@@ -44,7 +52,7 @@
     padding: 0.25em;
     width: 80%;
     margin: 0.5em 0;
-    background-color: #555a4070;
+    background-color: #555a402d;
 }
 
 .contenedor2{
@@ -56,3 +64,4 @@
     justify-content: space-around;
     flex-direction: column;
 }
+

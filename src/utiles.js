@@ -15,12 +15,6 @@ export const checkError = (type,value) => {
             }else{
                 return "ok";
             };
-        case 'telefono':
-            if (! /[\d()+-]/g.test(value) ) {
-                return "Introduce un telefono válido";
-            }else{
-                return "ok";
-            };
         default:
             return "ok";
         

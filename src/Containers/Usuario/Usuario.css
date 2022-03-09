@@ -58,6 +58,9 @@
     border-color: #555a40;
     border-radius: 5px;
 }
+.endpointLateral:hover{
+    background-color: #2b2e21;
+}
 
 .centro{
     background-image: url(/img/usuario.jpg);

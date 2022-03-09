@@ -8,7 +8,7 @@ const Registro = () => {
     let navigate = useNavigate();
     // Hooks
     const [datosUsuario, setDatosUsuario] = useState({
-        nombre: '', apellidos: '', edad: '', email: '', dni: '', contraseña: '', contraseña2: '', telefono:'', numCuenta: ''
+        nombre: '', edad: '', apellidos: '', email: '', contraseña: '', contraseña2: '', nick: ''
     });
     const [ msgError, setMsgError ] = useState('');
     // useEffect
@@ -25,7 +25,7 @@ const Registro = () => {
     // [datosUsuario])
     //Handler (manejador)
     const rellenarDatos = (e) => {
-        setDatosUsuario({...datosUsuario,[e.target.nombre]: e.target.value})
+        setDatosUsuario({...datosUsuario,[e.target.name]: e.target.value})
     };
     // Funciones Locales del Componente.
     const registrame = async ()=> {
@@ -50,18 +50,16 @@ const Registro = () => {
         // 2 Construimos el body.
         let body = {
             nombre: datosUsuario.nombre,
-            apellidos: datosUsuario.apellidos,
             edad: datosUsuario.edad,
+            apellidos: datosUsuario.apellidos,
             email: datosUsuario.email,
-            dni: datosUsuario.dni,
             contraseña: datosUsuario.contraseña,
-            telefono: parseInt(datosUsuario.telefono),
-            numCuenta: datosUsuario.numCuenta
+            nick: datosUsuario.nick
         }
         console.log('Le LLaman Body', body);
         // 3 Envio desde AXIOS.
         try {
-            let resultado = await axios.post('',body);                                   // AQUI ES DONDE VA EL ENDPOINT DEL BACKEND.
+            let resultado = await axios.post('http://localhost:5000/usuarios/registro',body);                                   // AQUI ES DONDE VA EL ENDPOINT DEL BACKEND.
             console.log(resultado)
                 setTimeout( ()=> {
                     navigate('/login');
@@ -75,14 +73,12 @@ const Registro = () => {
             <div className='contenedor3'>
                     <h2 className='Letras'>Introduce tus datos aqui</h2>
                     <input className='input' type="text" name="nombre" id="nombre" title="nombre" placeholder="Nombre:" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
-                    <input className='input' type="text" name="apellido" id="apellido" title="apellido" placeholder="Apellidos:" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <input className='input' type="text" name="edad" id="edad" title="edad" placeholder="Edad:" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                    <input className='input' type="text" name="apellidos" id="apellidos" title="apellidos" placeholder="Apellidos:" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <input className='input' type="email" name="email" id="email" title="email" placeholder="Correo Electrónico:" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
-                    <input className='input' type="text" name="dni" id="dni" title="dni" placeholder="DNI" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <input className='input' type="password" name="password" id="password" title="password" placeholder="Contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <input className='input' type="password" name="password2" id="password2" title="password2" placeholder="Repite contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
-                    <input className='input' type="text" name="telefono" id="telefono" title="telefono" placeholder="Telefono" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
-                    <input className='input' type="text" name="numCuenta" id="numCuenta" title="numCuenta" placeholder="NºCuenta" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                    <input className='input' type="text" name="nick" id="nick" title="nick" placeholder="Elige un Nick" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <div className="boton" onClick={()=>registrame()}>
                         Registrarme
                     </div>
@@ -91,13 +87,5 @@ const Registro = () => {
         </div>
     )
 }
-
-// const Registro = () => {
-//     return(
-//         <div className='paginaRegistro'>
-//             <h1 class="Cartel">SOY LA PAGINA REGISTRO</h1>
-//         </div>
-//     )
-// };
 
 export default Registro;

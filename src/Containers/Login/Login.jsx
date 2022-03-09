@@ -5,10 +5,14 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-const Login = () => {
+//REDUX...
+import { connect } from 'react-redux';
+import { LOGIN } from '../../redux/types';
+
+const Login = (props) => {
     let navigate = useNavigate();
     // 1 - Hooks (Equivalen al estado en los componentes de clase)
-    const [ credenciales, setCredenciales] = useState('');
+    const [credenciales, setCredenciales] = useState("");
     const [ datosUsuario, setDatosUsuario] = useState({email: '', contraseña: ''});
     const [ msgError, setMsgError] = useState('');
     const [ msgError2, setMsgError2] = useState('');
@@ -17,50 +21,55 @@ const Login = () => {
         //Funcion handler que setea los datos en el hook...[e.target.name] obtiene 
         //el nombre de la propiedad a cambiar, e.target.value tiene el valor..ambos
         //obtienen los datos del evento, que es el hecho de escribir en un input en concreto
-        setDatosUsuario({...datosUsuario, [e.target.nombre]: e.target.value})
+        setDatosUsuario({...datosUsuario, [e.target.name]: e.target.value})         // SIEMPRE SE ESCRIBE ASÍ
     };
     const checkContraseña = (e) => {
-        if(e.target.value.lenght < 4 ){
-            setMsgError('La contraseña debe de tener 4 caracteres');
+        if(e.target.value.length < 4){
+            setMsgError("La contraseña debe de tener al menos 4 caracteres");
         } else {
-            setMsgError('');
+            setMsgError("");
         }
     };
-    //3-useEffect
+        //3-useEffect
     // useEffect(()=>{
     //     //Este useEffect, sólo se ejecuta la primera vez que
     //     //se monta el componente. Se diferencia por el argumento 
     //     //de array vacio que hemos puesto
     //     console.log("Me he montado por primera y única vez");
     // },[]);
-    useEffect( ()=> {
+    useEffect(()=>{
         //Este useEffect se ejecutará por cada vez que se actualize el 
         //componente. Es decir, cuando cambie un hook y por lo tanto se actualize el componente.
         //Es peligroso cambiar hooks aqui, si no tenemos condicionales que eviten
         //que entremos en bucles infinitos.
         // console.log("Credenciales vale....", credenciales);
         if(credenciales?.token !== undefined){
-            setTimeout( ()=> {
-                navigate('/');
-            },1500);
+            setTimeout(()=>{
+                navigate("/usuario");
+            }, 3000);
         };
     });
     // Funciones Locales.
     const Login = async () => {
         try {
-            // Me invento las credenciales.
+            // Las credenciales que pone el Usuario en la pagina Login.
             let body = {
                 email: datosUsuario.email,
                 contraseña: datosUsuario.contraseña
             }
-            console.log(body)
             let resultado = await axios.post("http://localhost:5000/usuarios/login", body);                          // AQUI ES DONDE VA EL ENDPOINT DEL BACKEND.
             // Cambiamos el valor del Hook credenciales, por lo tanto recargará el componente.
             if(resultado.data === 'Usuario o contraseña inválido'){
                 setMsgError2('Usuario o contraseña inválido')
             } else {
-                setCredenciales(resultado.data);
+                setCredenciales(resultado.data)
+                    // GUARDAMOS LOS DATOS DEL LOGIN EN REDUX.
+                props.dispatch({type:LOGIN, payload: resultado.data});
+                setTimeout(()=>{
+                    navigate("/usuario");
+                },1500);
             }
+            console.log(resultado);
         } catch (error) {
             console.log(error)
         }
@@ -71,9 +80,10 @@ const Login = () => {
         }, 500);
     }
     // 2 - Render (Lo que pinta en Pantalla).
+    // SI CREDENCIALES Y EL TOKEN SON CORRECTOS EJECUTA ESE MENSAJE.
     if(credenciales?.token !== undefined){
         return(
-            <div>Hola {credenciales?.usuario?.nombre}, Bienvenido al Videoclub </div>
+            <div>Hola {credenciales?.usuario?.nombre}, Bienvenido al VideoClub </div>
         )
     } else {
         return(
@@ -99,11 +109,8 @@ const Login = () => {
                 </div>
                 <div className='parteDerecha1'></div>
             </div>
-        )
-    }
+        );
+    };
 };
 
-
-
-
-export default Login;
+export default connect()(Login);

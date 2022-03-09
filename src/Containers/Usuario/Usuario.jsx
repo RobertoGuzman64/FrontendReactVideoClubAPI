@@ -1,10 +1,22 @@
-// import React, { useState, useEffect } from 'react';
-// import { useNavigate } from 'react-router-dom';
-// import Button from '../../Componentes/Button/Button';
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { LOGOUT } from '../../redux/types';
+import {connect} from 'react-redux';
 import './Usuario.css';
-import React from 'react';
 
-const Usuario = () => {
+
+const Usuario = (props) => {
+    let navigate = useNavigate();
+    useEffect(()=>{
+        console.log(props.credenciales)
+    })
+    const logOut = () => {
+        //Borrar de RDX las credenciales
+        props.dispatch({type:LOGOUT});
+        setTimeout(()=>{
+            navigate("/");
+        },1500);
+    }
     return(
         <div className='paginaUsuario'>
             <div className='lateral'>
@@ -12,11 +24,14 @@ const Usuario = () => {
                     <div className='logo'></div>
                 </div>
                 <div className='containerEndpoints'>
+                    {props.credenciales?.usuario.nombre}
                     <div className='endpointLateral'></div>
                     <div className='endpointLateral'></div>
                     <div className='endpointLateral'></div>
                     <div className='endpointLateral'></div>
-                    <div className='endpointLateral'></div>
+                    <div className='endpointLateral' onClick={()=>logOut()}>
+                        <h1 className='Letras'>CERRAR SESION</h1>
+                    </div>
                 </div>
             </div>
             <div className='centro'>
@@ -24,7 +39,11 @@ const Usuario = () => {
                 <div className='endpointsCentro'></div>
             </div>
         </div>
-    )
+    );
 };
 
-export default Usuario;
+
+
+export default connect((state)=>({
+    credenciales: state.credenciales
+}))(Usuario);

@@ -30,19 +30,12 @@ const Login = (props) => {
             setMsgError("");
         }
     };
-        //3-useEffect
-    // useEffect(()=>{
-    //     //Este useEffect, sólo se ejecuta la primera vez que
-    //     //se monta el componente. Se diferencia por el argumento 
-    //     //de array vacio que hemos puesto
-    //     console.log("Me he montado por primera y única vez");
-    // },[]);
     useEffect(()=>{
         //Este useEffect se ejecutará por cada vez que se actualize el 
         //componente. Es decir, cuando cambie un hook y por lo tanto se actualize el componente.
         //Es peligroso cambiar hooks aqui, si no tenemos condicionales que eviten
         //que entremos en bucles infinitos.
-        // console.log("Credenciales vale....", credenciales);
+        console.log("Credenciales vale....", credenciales);
         if(credenciales?.token !== undefined){
             setTimeout(()=>{
                 navigate("/usuario");
@@ -80,37 +73,30 @@ const Login = (props) => {
         }, 500);
     }
     // 2 - Render (Lo que pinta en Pantalla).
-    // SI CREDENCIALES Y EL TOKEN SON CORRECTOS EJECUTA ESE MENSAJE.
-    if(credenciales?.token !== undefined){
-        return(
-            <div>Hola {credenciales?.usuario?.nombre}, Bienvenido al VideoClub </div>
-        )
-    } else {
-        return(
-            <div className='paginaLogin'>
-                <div className='parteIzquierda1'>
-                    <div className='contenedor1'>
-                        <h1 className='Letras'>Introduce tus datos</h1>
-                        {/* {<pre>{JSON.stringify(datosUsuario, null,2)}</pre>} */}
-                        <div className='inputs'>
-                            <input className='input' type="email" name="email" id="email" title="email" placeholder="Correo Electrónico" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
-                            <input className='input' type="password" name="contraseña" id="contraseña" title="contraseña" placeholder="Contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e); checkContraseña(e)}}/>
-                        </div>
-                        {msgError}
-                        {msgError2}
-                    <div className='contenedor2'>
-                        <div className="boton" onClick={()=>Login()}>INICIAR SESION</div>
-                            En caso de no estar registrad@
-                        <div className='boton' onClick={()=>irAregistro()}>
-                            REGISTRATÉ
+    return(
+        <div className='paginaLogin'>
+            <div className='parteIzquierda1'>
+                <div className='contenedor1'>
+                    <h1 className='Letras'>Introduce tus datos</h1>
+                    {/* {<pre>{JSON.stringify(datosUsuario, null,2)}</pre>} */}
+                    <div className='inputs'>
+                        <input className='input' type="email" name="email" id="email" title="email" placeholder="Correo Electrónico" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                        <input className='input' type="password" name="contraseña" id="contraseña" title="contraseña" placeholder="Contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e); checkContraseña(e)}}/>
                     </div>
-                    </div>
-                    </div>
+                    {msgError}
+                    {msgError2}
+                <div className='contenedor2'>
+                    <div className="boton" onClick={()=>Login()}>INICIAR SESION</div>
+                        En caso de no estar registrad@
+                    <div className='boton' onClick={()=>irAregistro()}>
+                        REGISTRATÉ
                 </div>
-                <div className='parteDerecha1'></div>
+                </div>
+                </div>
             </div>
-        );
-    };
+            <div className='parteDerecha1'></div>
+        </div>
+    );
 };
 
 export default connect()(Login);

@@ -6,10 +6,12 @@ import './Usuario.css';
 
 
 const Usuario = (props) => {
+    // Usamos navigate para que cuando pulsemos logout nos redirija.
     let navigate = useNavigate();
     useEffect(()=>{
         console.log(props.credenciales)
     })
+    // ESTA FUNCION HACE QUE PUEDAS DESLOGUEARTE
     const logOut = () => {
         //Borrar de RDX las credenciales
         props.dispatch({type:LOGOUT});
@@ -24,11 +26,13 @@ const Usuario = (props) => {
                     <div className='logo'></div>
                 </div>
                 <div className='containerEndpoints'>
-                    {props.credenciales?.usuario.nombre}
+                    <h1 className='nombre'>{props.credenciales?.usuario.nombre}</h1>
                     <div className='endpointLateral'></div>
                     <div className='endpointLateral'></div>
                     <div className='endpointLateral'></div>
-                    <div className='endpointLateral'></div>
+                    <div className='endpointLateral'>
+                        <h1 className='Letras'>MODIFICAR PERFIL</h1>
+                    </div>
                     <div className='endpointLateral' onClick={()=>logOut()}>
                         <h1 className='Letras'>CERRAR SESION</h1>
                     </div>

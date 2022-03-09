@@ -35,7 +35,7 @@ const Login = (props) => {
         //componente. Es decir, cuando cambie un hook y por lo tanto se actualize el componente.
         //Es peligroso cambiar hooks aqui, si no tenemos condicionales que eviten
         //que entremos en bucles infinitos.
-        console.log("Credenciales vale....", credenciales);
+        // console.log("Credenciales vale....", credenciales);
         if(credenciales?.token !== undefined){
             setTimeout(()=>{
                 navigate("/usuario");

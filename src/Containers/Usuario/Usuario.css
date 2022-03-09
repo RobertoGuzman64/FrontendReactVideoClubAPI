@@ -61,6 +61,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .endpointLateral:hover{
     background-color: #2b2e21;
@@ -72,6 +73,12 @@
     background-size: cover;
     height: 76.8em;
     width: 129em;
+}
+
+.nombre{
+    font-size: 3em;
+    color: #555a40;
+    font-family: fantasy;
 }
 
 .Letras1{

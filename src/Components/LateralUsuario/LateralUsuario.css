@@ -1,7 +1,7 @@
 .lateral{
     background-color: #c0c0c0;
     height: 76.5em;
-    width: 29em;
+    width: 25em;
     border-style: solid;
     border-color: #555a40;
     display: flex;
@@ -41,7 +41,7 @@
 .endpointLateral{
     background-color: #555a4070;
     height: 3em;
-    width: 25em;
+    width: 20em;
     margin-top: 2em;
     border-style: solid;
     border-color: #555a40;

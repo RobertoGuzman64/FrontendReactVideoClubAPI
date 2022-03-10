@@ -10,69 +10,6 @@
     user-select: none;
 }
 
-.lateral{
-    background-color: #c0c0c0;
-    height: 76.5em;
-    width: 29em;
-    border-style: solid;
-    border-color: #555a40;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.containerLogo{
-    background-color: transparent;
-    height: 20em;
-    width: 29em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo{
-    background-image: url(/img/logo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 8em;
-    width: 8em;
-    border-style: solid;
-    border-color: #555a40;
-}
-
-.containerEndpoints{
-    background-color: transparent;
-    height: 57em;
-    width: 29em;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.endpointLateral{
-    background-color: #555a4070;
-    height: 3em;
-    width: 25em;
-    margin-top: 2em;
-    border-style: solid;
-    border-color: #555a40;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-.endpointLateral:hover{
-    background-color: #2b2e21;
-}
-
-.nombre{
-    font-size: 3em;
-    color: #555a40;
-    font-family: fantasy;
-}
-
 .Letras1{
     color: #c0c0c0;
     font-family: fantasy;
@@ -90,7 +27,7 @@
 .vistaUsuario{
     background-color: bisque;
     height: 61.5em;
-    width: 89.6em;
+    width: 93.6em;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -21,7 +21,7 @@ const Admin = () => {
             </div>
             <div className='centro2'>
                 <h1 className='Letras1'>BIENVENIDO A TU AREA DE ADMINISTRADOR</h1>
-                <div className='endpointsCentro'></div>
+                <div className='ENDPOINTSCENTRO'></div>
             </div>
         </div>
     )

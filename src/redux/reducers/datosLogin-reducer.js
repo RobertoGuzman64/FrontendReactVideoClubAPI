@@ -1,9 +1,13 @@
 
 import {LOGIN, LOGOUT, MODIFY_CREDENCIALES} from '../types';
+
+
 const initialState = {
     token : '',
     usuario : {}
 };
+
+
 // const datosLoginReducer = (state = initialState, action) => {
 const datosLoginReducer = (state = initialState, action) => {
     switch(action.type){

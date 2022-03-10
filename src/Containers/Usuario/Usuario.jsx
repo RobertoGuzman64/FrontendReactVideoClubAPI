@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { LOGOUT } from '../../redux/types';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import './Usuario.css';
 
 
@@ -40,7 +40,7 @@ const Usuario = (props) => {
             </div>
             <div className='centro'>
                 <h1 className='Letras1'>BIENVENIDO A TU AREA PERSONAL</h1>
-                <div className='endpointsCentro'></div>
+                <div className='vistaUsuario'></div>
             </div>
         </div>
     );

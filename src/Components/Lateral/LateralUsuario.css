@@ -1,15 +1,3 @@
-
-.paginaUsuario {
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: center;
-    user-select: none;
-}
-
 .lateral{
     background-color: #c0c0c0;
     height: 76.5em;
@@ -71,28 +59,4 @@
     font-size: 3em;
     color: #555a40;
     font-family: fantasy;
-}
-
-.Letras1{
-    color: #c0c0c0;
-    font-family: fantasy;
-    font-size: 6em;
-}
-
-.centro{
-    background-image: url(/img/usuario.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 76.8em;
-    width: 129em;
-}
-
-.vistaUsuario{
-    background-color: bisque;
-    height: 61.5em;
-    width: 89.6em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }

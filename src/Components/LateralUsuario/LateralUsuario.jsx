@@ -24,6 +24,12 @@ const LateralUsuario = (props) => {
             navigate2('/perfil');
         },500)
     }
+    let navigate3 = useNavigate();
+    const irApeliculas = () => {
+        setTimeout( () => {
+            navigate3('/peliculas');
+        },500)
+    }
     return (
         <div className='lateral'>
             <div className='containerLogo'>
@@ -31,6 +37,9 @@ const LateralUsuario = (props) => {
             </div>
             <div className='containerEndpoints'>
                 <h1 className='nombre'>{props.credenciales?.usuario.nombre}</h1>
+                <div className='endpointLateral'onClick={() => irApeliculas()}>
+                    <h1 className='Letras'>PELICULAS</h1>
+                </div>
                 <div className='endpointLateral'></div>
                 <div className='endpointLateral'></div>
                 <div className='endpointLateral'></div>

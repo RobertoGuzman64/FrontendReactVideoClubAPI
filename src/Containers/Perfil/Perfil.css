@@ -1,10 +1,21 @@
 
 .paginaPerfil {
-    height: 100vh;
-    width: 100vw;
-    background-color: cadetblue;
+    height: 100%;
+    width: 100%;
+    background-color: black;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-direction: center;
+    user-select: none;
+}
+
+.vistaPerfil{
+    background-color: bisque;
+    height: 61.5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }

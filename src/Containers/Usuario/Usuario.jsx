@@ -12,7 +12,9 @@ const Usuario = () => {
             <LateralUsuario/>
             <div className='centro'>
                 <h1 className='Letras1'>BIENVENIDO A TU AREA PERSONAL</h1>
-                <div className='vistaUsuario'></div>
+                <div className='vistaUsuario'>
+                    <h1>Puedes dirigirte a donde quieras desde la barra de navegación</h1>
+                </div>
             </div>
         </div>
     );

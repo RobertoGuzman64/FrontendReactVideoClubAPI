@@ -18,6 +18,12 @@ const LateralUsuario = (props) => {
             navigate("/");
         },1500);
     }
+    let navigate2 = useNavigate();
+    const irAperfil = () => {
+        setTimeout( () => {
+            navigate2('/perfil');
+        },500)
+    }
     return (
         <div className='lateral'>
             <div className='containerLogo'>
@@ -28,7 +34,7 @@ const LateralUsuario = (props) => {
                 <div className='endpointLateral'></div>
                 <div className='endpointLateral'></div>
                 <div className='endpointLateral'></div>
-                <div className='endpointLateral'>
+                <div className='endpointLateral'onClick={() => irAperfil()}>
                     <h1 className='Letras'>MODIFICAR PERFIL</h1>
                 </div>
                 <div className='endpointLateral' onClick={() => logOut()}>

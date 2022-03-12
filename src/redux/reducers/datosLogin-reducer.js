@@ -1,5 +1,5 @@
 
-import {LOGIN, LOGOUT, MODIFY_CREDENCIALES} from '../types';
+import {LOGIN, LOGOUT, MODIFICAR_CREDENCIALES} from '../types';
 
 
 const initialState = {
@@ -18,7 +18,7 @@ const datosLoginReducer = (state = initialState, action) => {
         case LOGOUT : 
             return initialState;
         // //MODIFICAMOS LOS DATOS QUE TENEMOS GUARDADOS EN ESTE ESTADO CON LOS VALORES QUE METAMOS POR INPUT EN Perfil.js
-        case MODIFY_CREDENCIALES :
+        case MODIFICAR_CREDENCIALES :
             return {...state, usuario: action.payload};
         default :
             return state

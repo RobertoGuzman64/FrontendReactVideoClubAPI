@@ -27,7 +27,7 @@
 .vistaUsuario{
     background-color: bisque;
     height: 61.5em;
-    width: 93.6em;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;

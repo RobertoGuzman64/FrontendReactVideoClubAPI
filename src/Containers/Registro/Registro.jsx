@@ -59,7 +59,7 @@ const Registro = () => {
         console.log('Le LLaman Body', body);
         // 3 Envio desde AXIOS.
         try {
-            let resultado = await axios.post('http://localhost:5000/usuarios/registro',body);                                   // AQUI ES DONDE VA EL ENDPOINT DEL BACKEND.
+            let resultado = await axios.post('https://rgd-videoclub-backend.herokuapp.com/usuarios',body);                                   // AQUI ES DONDE VA EL ENDPOINT DEL BACKEND.
             console.log(resultado)
                 setTimeout( ()=> {
                     navigate('/login');

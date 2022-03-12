@@ -8,7 +8,7 @@ const Registro = () => {
     let navigate = useNavigate();
     // Hooks
     const [datosUsuario, setDatosUsuario] = useState({
-        nombre: '', edad: '', apellidos: '', email: '', contraseña: '', contraseña2: '', nick: ''
+        nombre: '', edad: '', apellidos: '', email: '', contraseña: '', contraseña2: '', nick: '', rol: false
     });
     const [ msgError, setMsgError ] = useState('');
     // useEffect
@@ -76,8 +76,8 @@ const Registro = () => {
                     <input className='input' type="text" name="edad" id="edad" title="edad" placeholder="Edad:" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <input className='input' type="text" name="apellidos" id="apellidos" title="apellidos" placeholder="Apellidos:" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <input className='input' type="email" name="email" id="email" title="email" placeholder="Correo Electrónico:" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
-                    <input className='input' type="password" name="password" id="password" title="password" placeholder="Contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
-                    <input className='input' type="password" name="password2" id="password2" title="password2" placeholder="Repite contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                    <input className='input' type="password" name="contraseña" id="password" title="password" placeholder="Contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                    <input className='input' type="password" name="contraseña2" id="password2" title="password2" placeholder="Repite contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <input className='input' type="text" name="nick" id="nick" title="nick" placeholder="Elige un Nick" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <div className="boton" onClick={()=>registrame()}>
                         Registrarme

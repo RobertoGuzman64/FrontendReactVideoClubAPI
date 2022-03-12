@@ -45,7 +45,7 @@ const Perfil = (props) => {
         };
         try{
             // Actualizamos los datos de Usuario en nuestra base de datos.
-            let res = await axios.put(`URL${props.credenciales.usuario.id}`, body, config);
+            let res = await axios.put(`http://localhost:5000/usuarios/${props.credenciales.usuario.id}`, body, config);
             if(res){
                 // Guardamos los datos en Redux.
                 props.dispatch({type:MODIFICAR_CREDENCIALES, payload: datosUsuario});
@@ -66,9 +66,7 @@ const Perfil = (props) => {
                     <input className='input' type="text" name="apellidos" id="apellidos" title="apellidos" placeholder={props.credenciales.usuario.apellidos} autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <input className='input' type="email" name="email" id="email" title="email" placeholder={props.credenciales.usuario.email} autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <input className='input' type="text" name="nick" id="nick" title="nick" placeholder={props.credenciales.usuario.nick} autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
-                    <div className="boton" onClick={()=>actualizaUsuario()}>
-                        Actualizar Perfil
-                    </div>
+                    <div className="boton" onClick={()=>actualizaUsuario()}>Actualizar Perfil</div>
                 </div>
             </div>
         </div>

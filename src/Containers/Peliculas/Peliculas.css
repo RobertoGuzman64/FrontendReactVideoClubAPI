@@ -29,8 +29,8 @@
 }
 
 .cardPelicula {
-    height: 20em;
-    width: 20em;
+    height: 25em;
+    width: 35em;
     background-color: #c0c0c0;
     margin: .2em;
     border-radius: .5em;
@@ -42,6 +42,8 @@
     color: white;
     font-weight: bold;
     cursor: pointer;
+    border-style: solid;
+    border-color: #555a40;
 }
 .cardPelicula:hover{
     background-color: #404431;

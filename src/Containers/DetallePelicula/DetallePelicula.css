@@ -33,10 +33,12 @@
     align-items: center;
     color: white;
     font-weight: bold;
+    border-style: solid;
+    border-color: #555a40;
 }
 
 .imagenPelicula2{
-    height: 30em;
+    height: 40em;
     width: 30em;
     margin: .2em;
     box-sizing: border-box;

@@ -21,6 +21,7 @@ const DetallePelicula = (props) => {
                     <div className='cardDetallePelicula'>
                     <img className="imagenPelicula2" src={props.busqueda.imagen} alt={props.busqueda.titulo}/>
                     <p>{props.busqueda.sinopsis}</p>
+                    <div className='boton'>ALQUILAR</div>
                     </div>
                 </div>  
             </div>

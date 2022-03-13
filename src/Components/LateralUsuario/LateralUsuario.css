@@ -12,7 +12,7 @@
 
 .containerLogo{
     background-color: transparent;
-    height: 20em;
+    height: 10em;
     width: 29em;
     display: flex;
     align-items: center;
@@ -20,11 +20,11 @@
 }
 
 .logo{
-    background-image: url(/img/logo.png);
+    background-image: url(/img/logo.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 8em;
-    width: 8em;
+    height: 10em;
+    width: 10em;
     border-style: solid;
     border-color: #555a40;
 }

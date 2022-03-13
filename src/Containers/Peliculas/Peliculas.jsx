@@ -96,9 +96,7 @@ const Peliculas = (props) => {
             <div className='centro'>
                 {/* <h1 className='Letras1'>BIENVENIDO A TU AREA PERSONAL</h1> */}
                 <div className='vistaPeliculas'>
-                    <div className='ESPINNER'>
-                        <h1>AQUI VA EL ESPINER DE CARGA</h1>
-                    </div>
+                    <div className='espinner'></div>
                 </div>
             </div>
         </div>

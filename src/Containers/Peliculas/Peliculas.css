@@ -56,3 +56,11 @@
     justify-content: center;
     align-items: center;
 }
+
+.espinner{
+    height: 30em;
+    width: 30em;
+    background-image:url(/img/espinner.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

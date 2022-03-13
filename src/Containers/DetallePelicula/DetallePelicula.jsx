@@ -18,9 +18,13 @@ const DetallePelicula = (props) => {
             <LateralUsuario/>
             <div className='centro'>
                 <div className='vistaDetallePelicula'>
-                    <img className="cardPelicula" src={props.busqueda.imagen} alt={props.busqueda.titulo}/></div>  
+                    <div className='cardDetallePelicula'>
+                    <img className="imagenPelicula2" src={props.busqueda.imagen} alt={props.busqueda.titulo}/>
+                    <p>{props.busqueda.sinopsis}</p>
                     </div>
-                </div>
+                </div>  
+            </div>
+        </div>
     )
 };
 

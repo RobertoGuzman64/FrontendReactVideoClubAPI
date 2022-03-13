@@ -2,10 +2,11 @@ import {combineReducers} from 'redux';
 
 
 import credenciales from './datosLogin-reducer';
-// AQUI PONDREMOS LA BUSQUEDA DE PELICULA POR TITULO
+import busqueda from './busquedaPeliculas-reducer';
 
 const rootReducer = combineReducers({
-    credenciales
+    credenciales,
+    busqueda
 });
 
 export default rootReducer;

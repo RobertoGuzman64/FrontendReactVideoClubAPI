@@ -1,4 +1,4 @@
-import { DETALLE_PELICULA } from '../types';
+import { DETALLE_PELICULA, TITULO_PELICULA } from '../types';
 
 const initialState = {
     pelicula: {},
@@ -9,7 +9,7 @@ const busquedaPeliculasReducer = (state = initialState, action) => {
     switch(action.type){
         //GUARDO EN EL ESTADO LOS DATOS DEL USUARIO LOGUEADO
         case DETALLE_PELICULA :
-            return {...state, film: action.payload};
+            return {...state, pelicula: action.payload};
 
         case TITULO_PELICULA :
             return {...state, peliculas: action.payload};

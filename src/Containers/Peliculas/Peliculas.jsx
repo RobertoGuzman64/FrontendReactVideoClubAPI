@@ -76,9 +76,9 @@ const Peliculas = (props) => {
                                     //Al mapear, cada elemento que se itera del array (en este caso pelicula es ese elemento),
                                     //si le hacemos propiedad onclick y pasamos el elemento como argumento,
                                     //a esa funcion le va a llegar el objeto que hayamos clickado entero
-                                    <div className='cardPelicula' key={pelicula.id} /*onClick={()=>escogePelicula(pelicula)}*/>
-                                        <img className='imagenPelicula' src={pelicula.imagen} alt={pelicula.title}/>
-                                        <p>{pelicula.overview}</p>
+                                    <div className='cardPelicula' key={pelicula.id} onClick={()=>escogePelicula(pelicula)}>
+                                        <img className='imagenPelicula' src={pelicula.imagen} alt={pelicula.titulo}/>
+                                        <p>{pelicula.sinopsis}</p>
                                     </div>
                                 );
                             })
@@ -94,7 +94,6 @@ const Peliculas = (props) => {
             <div className='paginaPeliculas'>
             <LateralUsuario/>
             <div className='centro'>
-                {/* <h1 className='Letras1'>BIENVENIDO A TU AREA PERSONAL</h1> */}
                 <div className='vistaPeliculas'>
                     <div className='espinner'></div>
                 </div>

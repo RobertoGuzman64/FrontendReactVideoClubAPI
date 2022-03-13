@@ -11,6 +11,7 @@ import Perfil from './Containers/Perfil/Perfil';
 import Registro from './Containers/Registro/Registro';
 import Admin from './Containers/Admin/Admin';
 import Usuario from './Containers/Usuario/Usuario';
+import DetallePelicula from './Containers/DetallePelicula/DetallePelicula';
 
 // Aqui es donde hacemos la función de navegar entre las distintas páginas de la aplicación.
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path='/Perfil' element={<Perfil/>}/>
         <Route path='/Registro' element={<Registro/>}/>
         <Route path='/Admin' element={<Admin/>}/>
+        <Route path='/DetallePelicula' element={<DetallePelicula/>}/>
         <Route path='/Usuario' element={<Usuario/>}/>
       </Routes>
       </BrowserRouter>

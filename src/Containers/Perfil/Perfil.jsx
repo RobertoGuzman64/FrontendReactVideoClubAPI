@@ -58,14 +58,13 @@ const Perfil = (props) => {
         <div className='paginaPerfil'>
             <LateralUsuario/>
             <div className='centro'>
-                <h1 className='Letras1'>BIENVENIDO A TU AREA PERSONAL</h1>
                 <div className='vistaPerfil'>
-                    <h2 className='Letras'>Introduce tus datos aqui</h2>
-                    <input className='input' type="text" name="nombre" id="nombre" title="nombre" placeholder={props.credenciales.usuario.nombre} autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
-                    <input className='input' type="text" name="edad" id="edad" title="edad" placeholder={props.credenciales.usuario.edad} autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
-                    <input className='input' type="text" name="apellidos" id="apellidos" title="apellidos" placeholder={props.credenciales.usuario.apellidos} autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
-                    <input className='input' type="email" name="email" id="email" title="email" placeholder={props.credenciales.usuario.email} autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
-                    <input className='input' type="text" name="nick" id="nick" title="nick" placeholder={props.credenciales.usuario.nick} autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                    <h2 className='Letras3'>INTRODUCE TUS DATOS PARA MODIFICARLOS AQUI</h2>
+                    <input className='input2' type="text" name="nombre" id="nombre" title="nombre" placeholder={props.credenciales.usuario.nombre} autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                    <input className='input2' type="text" name="edad" id="edad" title="edad" placeholder={props.credenciales.usuario.edad} autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                    <input className='input2' type="text" name="apellidos" id="apellidos" title="apellidos" placeholder={props.credenciales.usuario.apellidos} autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                    <input className='input2' type="email" name="email" id="email" title="email" placeholder={props.credenciales.usuario.email} autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                    <input className='input2' type="text" name="nick" id="nick" title="nick" placeholder={props.credenciales.usuario.nick} autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <div className="boton" onClick={()=>actualizaUsuario()}>Actualizar Perfil</div>
                 </div>
             </div>

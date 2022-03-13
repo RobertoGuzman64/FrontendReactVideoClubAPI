@@ -52,11 +52,13 @@
     cursor: pointer;
 }
 .endpointLateral:hover{
-    background-color: #2b2e21;
+    background-color: #c0c0c0;
+    -webkit-text-stroke: 1px #2b2e21;
 }
 
 .nombre{
     font-size: 3em;
     color: #555a40;
     font-family: fantasy;
+    -webkit-text-stroke: 1px #2b2e21;
 }

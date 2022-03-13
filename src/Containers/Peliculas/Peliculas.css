@@ -11,20 +11,27 @@
 }
 
 .vistaPeliculas{
-    background-color: bisque;
-    height: 61.5em;
+    background-color: transparent;
+    height: 70em;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-
     justify-content: center;
     align-items: center;
+    overflow-y: scroll;
+}
+
+.Letras3{
+    color: #c0c0c0;
+    font-family: fantasy;
+    font-size: 2.5em;
+    -webkit-text-stroke: 2px black;
 }
 
 .cardPelicula {
-    height: 10em;
-    width: 9em;
-    background-color: hsl(221, 40%, 54%);
+    height: 20em;
+    width: 20em;
+    background-color: #c0c0c0;
     margin: .2em;
     border-radius: .5em;
     padding: .2em;
@@ -34,10 +41,14 @@
     align-items: center;
     color: white;
     font-weight: bold;
+    cursor: pointer;
+}
+.cardPelicula:hover{
+    background-color: #404431;
 }
 .imagenPelicula {
-    height: 10em;
-    width: 9em;
+    height: 17em;
+    width: 15em;
     margin: .2em;
     box-sizing: border-box;
     display: flex;

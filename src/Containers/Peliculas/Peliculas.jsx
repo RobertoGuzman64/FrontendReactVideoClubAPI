@@ -67,7 +67,7 @@ const Peliculas = (props) => {
             <div className='paginaPeliculas'>
                 <LateralUsuario/>
                 <div className='centro'>
-                    <h1 className='Letras1'>BIENVENIDO A TU AREA PERSONAL</h1>
+                    <h1 className='Letras3'>SELECCIONA LA PELICULA QUE QUIERAS ALQUILAR</h1>
                     <div className='vistaPeliculas'>
                         {
                             //Voy a mapear las películas
@@ -94,7 +94,7 @@ const Peliculas = (props) => {
             <div className='paginaPeliculas'>
             <LateralUsuario/>
             <div className='centro'>
-                <h1 className='Letras1'>BIENVENIDO A TU AREA PERSONAL</h1>
+                {/* <h1 className='Letras1'>BIENVENIDO A TU AREA PERSONAL</h1> */}
                 <div className='vistaPeliculas'>
                     <div className='ESPINNER'>
                         <h1>AQUI VA EL ESPINER DE CARGA</h1>

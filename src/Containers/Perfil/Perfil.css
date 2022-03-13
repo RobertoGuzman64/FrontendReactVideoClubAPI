@@ -11,11 +11,22 @@
 }
 
 .vistaPerfil{
-    background-color: bisque;
+    background-color: transparent;
     height: 61.5em;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.input2{
+    all:unset;
+    text-align: left;
+    border: 2px solid #c0c0c0;
+    border-bottom: 2px 2px;
+    padding: 0.25em;
+    width: 60%;
+    margin: 0.5em 0;
+    background-color: #555a402d;
 }

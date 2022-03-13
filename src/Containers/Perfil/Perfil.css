@@ -25,8 +25,10 @@
     text-align: left;
     border: 2px solid #c0c0c0;
     border-bottom: 2px 2px;
-    padding: 0.25em;
+    padding: 0.50em;
     width: 60%;
     margin: 0.5em 0;
     background-color: #555a402d;
+    color: #c0c0c0;
+    margin-block-end: 2em;
 }

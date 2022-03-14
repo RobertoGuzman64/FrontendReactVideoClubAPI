@@ -5,9 +5,6 @@ import { useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { DETALLE_PELICULA } from '../../redux/types';
 
-// Utiles.
-// import {raiz} from '../../utiles';
-
 import axios from 'axios';
 import './Peliculas.css';
 import LateralUsuario from '../../Components/LateralUsuario/LateralUsuario';
@@ -31,7 +28,7 @@ const Peliculas = (props) => {
 
     // useEffect Personalizado para el Hook de Peliculas.
     useEffect( ()=> {
-        console.log("vaya, , Peliculas ha cambiado, ", peliculas);
+        // console.log("vaya, , Peliculas ha cambiado, ", peliculas);
     },[peliculas]);
 
 

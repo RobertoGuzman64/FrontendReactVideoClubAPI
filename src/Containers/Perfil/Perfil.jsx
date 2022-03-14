@@ -41,11 +41,12 @@ const Perfil = (props) => {
             nick: datosUsuario.nick
         }
         let config = {
-            headers: { Authorization: `bearer ${props.credenciales.token}`}
+            headers: { Authorization: `Bearer ${props.credenciales.token}`}
         };
+        console.log("Al kiwi",props.credenciales)
         try{
             // Actualizamos los datos de Usuario en nuestra base de datos.
-            let res = await axios.put(`https://rgd-videoclub-backend.herokuapp.com/usuarios${props.credenciales.usuario.id}`, body, config);
+            let res = await axios.put(`https://rgd-videoclub-backend.herokuapp.com/usuarios/${props.credenciales.usuario.id}`, body, config);
             if(res){
                 // Guardamos los datos en Redux.
                 props.dispatch({type:MODIFICAR_CREDENCIALES, payload: datosUsuario});
@@ -63,7 +64,6 @@ const Perfil = (props) => {
                     <input className='input2' type="text" name="nombre" id="nombre" title="nombre" placeholder={props.credenciales.usuario.nombre} autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <input className='input2' type="text" name="edad" id="edad" title="edad" placeholder={props.credenciales.usuario.edad} autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <input className='input2' type="text" name="apellidos" id="apellidos" title="apellidos" placeholder={props.credenciales.usuario.apellidos} autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
-                    <input className='input2' type="email" name="email" id="email" title="email" placeholder={props.credenciales.usuario.email} autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <input className='input2' type="text" name="nick" id="nick" title="nick" placeholder={props.credenciales.usuario.nick} autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <div className="boton" onClick={()=>actualizaUsuario()}>Actualizar Perfil</div>
                 </div>

@@ -3,11 +3,17 @@
 // import Button from '../../Componentes/Button/Button';
 import './Pedidos.css';
 import React from 'react';
+import LateralUsuario from '../../Components/LateralUsuario/LateralUsuario';
 
 const Pedidos = () => {
     return(
         <div className='paginaPedidos'>
-            <h1 class="Cartel">SOY LA PAGINA PEDIDOS</h1>
+            <LateralUsuario/>
+            <div className='centro'>
+                <div className='vistaPedidos'>
+                    
+                </div>
+            </div>
         </div>
     )
 };

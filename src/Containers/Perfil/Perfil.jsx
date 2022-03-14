@@ -45,7 +45,7 @@ const Perfil = (props) => {
         };
         try{
             // Actualizamos los datos de Usuario en nuestra base de datos.
-            let res = await axios.put(`http://localhost:5000/usuarios/${props.credenciales.usuario.id}`, body, config);
+            let res = await axios.put(`https://rgd-videoclub-backend.herokuapp.com/usuarios${props.credenciales.usuario.id}`, body, config);
             if(res){
                 // Guardamos los datos en Redux.
                 props.dispatch({type:MODIFICAR_CREDENCIALES, payload: datosUsuario});

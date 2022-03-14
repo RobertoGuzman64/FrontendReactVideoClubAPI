@@ -63,7 +63,6 @@ const Peliculas = (props) => {
     if (peliculas[0]?.id !==undefined){
 
         return(
-
             <div className='paginaPeliculas'>
                 <LateralUsuario/>
                 <div className='centro'>
@@ -87,7 +86,6 @@ const Peliculas = (props) => {
                 </div>
             </div>
         )
-
     } else {
 
         return (

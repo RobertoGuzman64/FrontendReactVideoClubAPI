@@ -33,6 +33,7 @@ const Perfil = (props) => {
     })
     const actualizaUsuario = async () => {
         let body = {
+            id: datosUsuario.id,
             nombre: datosUsuario.nombre,
             edad: datosUsuario.edad,
             apellidos: datosUsuario.apellidos,
@@ -43,7 +44,6 @@ const Perfil = (props) => {
         let config = {
             headers: { Authorization: `Bearer ${props.credenciales.token}`}
         };
-        console.log("Al kiwi",props.credenciales)
         try{
             // Actualizamos los datos de Usuario en nuestra base de datos.
             let res = await axios.put(`https://rgd-videoclub-backend.herokuapp.com/usuarios/${props.credenciales.usuario.id}`, body, config);

@@ -83,11 +83,11 @@ const Login = (props) => {
                     <div className='inputs'>
                         <input className='input' type="email" name="email" id="email" title="email" placeholder="Correo Electrónico" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                         <input className='input' type="password" name="contraseña" id="contraseña" title="contraseña" placeholder="Contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e); checkContraseña(e)}}/>
-                        <button id="mostrarContraseña" onClick={() => {
-                                let input = document.getElementById('contraseña');
-                                input.type = input.type === 'password' ? 'text' : 'password';
-                                let button = document.getElementById('mostrarContraseña')
-                                button.innerHTML=input.type === 'password' ? 'MOSTRAR CONTRASEÑA' : 'ESCONDER CONTRASEÑA';
+                        <button className="mostrarContraseña" id="mostrarContraseña" onClick={() => {
+                            let input = document.getElementById('contraseña');
+                            input.type = input.type === 'password' ? 'text' : 'password';
+                            let button = document.getElementById('mostrarContraseña')
+                            button.innerHTML=input.type === 'password' ? 'MOSTRAR CONTRASEÑA' : 'ESCONDER CONTRASEÑA';
                             }}>
                                 MOSTRAR CONTRASEÑA
                         </button>

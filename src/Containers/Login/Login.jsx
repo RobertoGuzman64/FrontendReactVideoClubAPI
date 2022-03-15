@@ -12,10 +12,10 @@ import { LOGIN } from '../../redux/types';
 const Login = (props) => {
     let navigate = useNavigate();
     // 1 - Hooks (Equivalen al estado en los componentes de clase)
-    const [credenciales, setCredenciales] = useState("");
-    const [ datosUsuario, setDatosUsuario] = useState({email: '', contraseña: ''});
-    const [ msgError, setMsgError] = useState('');
-    const [ msgError2, setMsgError2] = useState('');
+    const [ credenciales, setCredenciales ] = useState("");
+    const [ datosUsuario, setDatosUsuario ] = useState({email: '', contraseña: ''});
+    const [ msgError, setMsgError ] = useState('');
+    const [ msgError2, setMsgError2 ] = useState('');
     // Funciones handlers
     const rellenarDatos = (e) => {
         //Funcion handler que setea los datos en el hook...[e.target.name] obtiene 
@@ -35,7 +35,6 @@ const Login = (props) => {
         //componente. Es decir, cuando cambie un hook y por lo tanto se actualize el componente.
         //Es peligroso cambiar hooks aqui, si no tenemos condicionales que eviten
         //que entremos en bucles infinitos.
-        // console.log("Credenciales vale....", credenciales);
         if(credenciales?.token !== undefined){
             setTimeout(()=>{
                 navigate("/usuario");

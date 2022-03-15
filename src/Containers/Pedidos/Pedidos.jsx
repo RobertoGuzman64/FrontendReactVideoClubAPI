@@ -1,6 +1,5 @@
 // import React, { useState, useEffect } from 'react';
 // import { useNavigate } from 'react-router-dom';
-// import Button from '../../Componentes/Button/Button';
 import './Pedidos.css';
 import React from 'react';
 import LateralUsuario from '../../Components/LateralUsuario/LateralUsuario';

@@ -74,6 +74,7 @@ const Peliculas = (props) => {
                                     //a esa funcion le va a llegar el objeto que hayamos clickado entero
                                     <div className='cardPelicula' key={pelicula.id} onClick={()=>escogePelicula(pelicula)}>
                                         <img className='imagenPelicula' src={pelicula.imagen} alt={pelicula.titulo}/>
+                                        <p>{pelicula.titulo}</p>
                                         <p>{pelicula.sinopsis}</p>
                                     </div>
                                 );

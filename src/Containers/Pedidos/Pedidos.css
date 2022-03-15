@@ -11,8 +11,8 @@
 }
 
 .vistaPedidos{
-    background-color: bisque;
-    height: 76.8em;
+    background-color: transparent;
+    height: 70em;
     width: 100%;
     display: flex;
     flex-wrap: wrap;

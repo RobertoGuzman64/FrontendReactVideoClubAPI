@@ -73,8 +73,9 @@ const Peliculas = (props) => {
                                     //si le hacemos propiedad onclick y pasamos el elemento como argumento,
                                     //a esa funcion le va a llegar el objeto que hayamos clickado entero
                                     <div className='cardPelicula' key={pelicula.id} onClick={()=>escogePelicula(pelicula)}>
+                                        <p className='Letras'>{pelicula.titulo}</p>
                                         <img className='imagenPelicula' src={pelicula.imagen} alt={pelicula.titulo}/>
-                                        <p>{pelicula.titulo}</p>
+                                        
                                         <p>{pelicula.sinopsis}</p>
                                     </div>
                                 );

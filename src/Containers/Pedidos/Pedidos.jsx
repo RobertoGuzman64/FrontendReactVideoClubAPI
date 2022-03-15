@@ -23,7 +23,7 @@ const Pedidos = (props) => {
     }, []);
 
 
-    // useEffect Personalizado para el Hook de Peliculas.
+    // useEffect Personalizado para el Hook de Pedidos.
     useEffect(() => {
         console.log("vaya, , Pedidos ha cambiado, ", pedidos);
     }, [pedidos]);
@@ -43,34 +43,46 @@ const Pedidos = (props) => {
             console.log(error);
         }
     };
-    return (
-        <div className='paginaPedidos'>
-            <LateralUsuario />
-            <div className='centro'>
-            <h1 className='Letras3'>AQUI PUEDES VER LAS PELICULAS QUE HAS ALQUILADO</h1>
-                <div className='vistaPedidos'>
-                    {
-                        //Voy a mapear los Pedidos
-                        pedidos.map(pedido => {
-                            return (
-                                //Al mapear, cada elemento que se itera del array (en este caso pelicula es ese elemento),
-                                //si le hacemos propiedad onclick y pasamos el elemento como argumento,
-                                //a esa funcion le va a llegar el objeto que hayamos clickado entero
-                                <div className='cardPelicula' key={pedido.id}>
-                                    <p>{pedido.titulo}</p>
-                                    <img className='imagenPelicula' src={pedido.imagen} alt={pedido.titulo} />
-                                    <p>{pedido.sinopsis}</p>
-                                    <p>{pedido.nick}</p>
-                                    
-                                </div>
-                            );
-                        })
-                    }
+    // if(pedidos[0]?.id !== undefined) {
+        return (
+            <div className='paginaPedidos'>
+                <LateralUsuario />
+                <div className='centro'>
+                    <h1 className='Letras3'>AQUI PUEDES VER LAS PELICULAS QUE HAS ALQUILADO</h1>
+                    <div className='vistaPedidos'>
+                        {
+                            //Voy a mapear los Pedidos
+                            pedidos.map(pedido => {
+                                return (
+                                    //Al mapear, cada elemento que se itera del array (en este caso pelicula es ese elemento),
+                                    //si le hacemos propiedad onclick y pasamos el elemento como argumento,
+                                    //a esa funcion le va a llegar el objeto que hayamos clickado entero
+                                    <div className='cardPedidos' key={pedido.id}>
+                                        <p className='Letras'>{pedido.titulo}</p>
+                                        <img className='imagenPelicula' src={pedido.imagen} alt={pedido.titulo} />
+                                        <p>{pedido.sinopsis}</p>
+                                    </div>
+                                );
+                            })
+                        }
+                    </div>
                 </div>
             </div>
-        </div>
-    )
+        )
+    // } else {
+    //     return (
+    //         <div className='paginaPedidos'>
+    //             <LateralUsuario />
+    //             <div className='centro'>
+    //                 <div className='vistaPeliculas'>
+    //                     <div className='espinner'></div>
+    //                 </div>
+    //             </div>
+    //         </div>
+    //     )
+    // };
 };
+
 
 export default connect((state) => ({
     credenciales: state.credenciales

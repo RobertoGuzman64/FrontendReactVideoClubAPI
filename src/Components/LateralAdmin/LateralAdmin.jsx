@@ -18,6 +18,12 @@ const LateralAdmin = (props) => {
             navigate("/");
         }, 1500);
     }
+    let navigate1 = useNavigate();
+    const irAusuario = () => {
+        setTimeout(() => {
+            navigate1('/usuario');
+        }, 500)
+    }
     return (
         <div className='lateral'>
             <div className='containerLogo'>
@@ -28,7 +34,9 @@ const LateralAdmin = (props) => {
                 <div className='endpointLateral'></div>
                 <div className='endpointLateral'></div>
                 <div className='endpointLateral'></div>
-                <div className='endpointLateral'></div>
+                <div className='endpointLateral' onClick={() => irAusuario()}>
+                        <h1 className='Letras'>IR A USUARIO</h1>
+                    </div>
                 <div className='endpointLateral' onClick={() => logOut()}>
                     <h1 className='Letras'>CERRAR SESION</h1>
                 </div>

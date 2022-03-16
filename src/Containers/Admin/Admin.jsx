@@ -7,7 +7,7 @@ import LateralAdmin from '../../Components/LateralAdmin/LateralAdmin';
 const Admin = (props) => {
     let navigate = useNavigate();
     useEffect(() => {
-        if (props.credenciales.usuario.rol === false) {
+        if (props.credenciales.usuario.rol !== true) {
             navigate("/");
         }
     })

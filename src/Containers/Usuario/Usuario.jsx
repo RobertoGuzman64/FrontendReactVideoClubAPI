@@ -1,6 +1,4 @@
 import React from 'react';
-// import { useNavigate } from 'react-router-dom';
-// import { LOGOUT } from '../../redux/types';
 import { connect } from 'react-redux';
 import './Usuario.css';
 

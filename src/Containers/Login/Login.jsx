@@ -54,7 +54,6 @@ const Login = (props) => {
             if(resultado.data === 'Usuario o contraseña inválido'){
                 setMsgError2('Usuario o contraseña inválido')
             } else {
-                console.log("Gitinit",resultado.data)
                 setCredenciales(resultado.data)
                     // GUARDAMOS LOS DATOS DEL LOGIN EN REDUX.
                 props.dispatch({type:LOGIN, payload: resultado.data});

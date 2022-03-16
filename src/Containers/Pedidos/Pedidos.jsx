@@ -43,7 +43,7 @@ const Pedidos = (props) => {
             console.log(error);
         }
     };
-    // if(pedidos[0]?.id !== undefined) {
+    if(pedidos[0]?.nick !== undefined) {
         return (
             <div className='paginaPedidos'>
                 <LateralUsuario />
@@ -52,12 +52,12 @@ const Pedidos = (props) => {
                     <div className='vistaPedidos'>
                         {
                             //Voy a mapear los Pedidos
-                            pedidos.map(pedido => {
+                            pedidos.map((pedido, index) => {
                                 return (
                                     //Al mapear, cada elemento que se itera del array (en este caso pelicula es ese elemento),
                                     //si le hacemos propiedad onclick y pasamos el elemento como argumento,
                                     //a esa funcion le va a llegar el objeto que hayamos clickado entero
-                                    <div className='cardPedidos' key={pedido.id}>
+                                    <div className='cardPedidos' key={index}>
                                         <p className='Letras'>{pedido.titulo}</p>
                                         <img className='imagenPelicula' src={pedido.imagen} alt={pedido.titulo} />
                                         <p>{pedido.sinopsis}</p>
@@ -69,18 +69,18 @@ const Pedidos = (props) => {
                 </div>
             </div>
         )
-    // } else {
-    //     return (
-    //         <div className='paginaPedidos'>
-    //             <LateralUsuario />
-    //             <div className='centro'>
-    //                 <div className='vistaPeliculas'>
-    //                     <div className='espinner'></div>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     )
-    // };
+    } else {
+        return (
+            <div className='paginaPedidos'>
+                <LateralUsuario />
+                <div className='centro'>
+                    <div className='vistaPeliculas'>
+                        <div className='espinner'></div>
+                    </div>
+                </div>
+            </div>
+        )
+    };
 };
 
 

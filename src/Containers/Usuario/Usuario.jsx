@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 import './Usuario.css';
-
 import LateralUsuario from '../../Components/LateralUsuario/LateralUsuario';
 
-const Usuario = () => {
-    return(
+const Usuario = (props) => {
+    let navigate = useNavigate();
+    useEffect(() => {
+        if (props.credenciales.token === '') {
+            navigate("/");
+        }
+    })
+    return (
         <div className='paginaUsuario'>
-            <LateralUsuario/>
+            <LateralUsuario />
             <div className='centro'>
                 <h1 className='Letras1'>BIENVENIDO A TU AREA PERSONAL</h1>
                 <div className='vistaUsuario'>
@@ -18,6 +24,6 @@ const Usuario = () => {
     );
 };
 
-export default connect((state)=>({
+export default connect((state) => ({
     credenciales: state.credenciales
 }))(Usuario);

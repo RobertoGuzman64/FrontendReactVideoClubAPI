@@ -18,7 +18,7 @@ const Home = () =>{
             <div className='parteDerecha'>
                 <div className='contenedor'>
                     <div className='contenedorCartel'>
-                        <h1 class='Letras'>Para poder acceder al contenido debes logearte primero.</h1>
+                        <h1 class='Letras'>Para poder acceder al contenido debes logearte primero, és gratis hasta que desees alquilar alguna pelicula.</h1>
                     </div>
                     <div className='boton' onClick={ () => irAlogin()}>
                         Ir a Login

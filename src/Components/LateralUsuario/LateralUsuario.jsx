@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import './LateralUsuario.css';
 
 const LateralUsuario = (props) => {
-    // Usamos navigate para que cuando pulsemos logout nos redirija.
+    // Usamos navigate para que cuando pulsemos los botones nos redirija.
     let navigate = useNavigate();
     useEffect(() => {
         console.log(props.credenciales)

@@ -25,7 +25,6 @@ const LateralAdmin = (props) => {
             </div>
             <div className='containerEndpoints'>
             <h1 className='nombre'>{props.credenciales?.usuario.nombre}</h1>
-            <h1 className='nombre'>{props.credenciales?.usuario.apellidos}</h1>
                 <div className='endpointLateral'></div>
                 <div className='endpointLateral'></div>
                 <div className='endpointLateral'></div>

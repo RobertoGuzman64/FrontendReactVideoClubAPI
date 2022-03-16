@@ -7,61 +7,95 @@ import './LateralUsuario.css';
 const LateralUsuario = (props) => {
     // Usamos navigate para que cuando pulsemos logout nos redirija.
     let navigate = useNavigate();
-    useEffect(()=>{
+    useEffect(() => {
         console.log(props.credenciales)
     })
     // ESTA FUNCION HACE QUE PUEDAS DESLOGUEARTE
     const logOut = () => {
         //Borrar de RDX las credenciales
-        props.dispatch({type:LOGOUT});
-        setTimeout(()=>{
+        props.dispatch({ type: LOGOUT });
+        setTimeout(() => {
             navigate("/");
-        },1500);
+        }, 1500);
     }
     let navigate2 = useNavigate();
     const irAperfil = () => {
-        setTimeout( () => {
+        setTimeout(() => {
             navigate2('/perfil');
-        },500)
+        }, 500)
     }
     let navigate3 = useNavigate();
     const irApeliculas = () => {
-        setTimeout( () => {
+        setTimeout(() => {
             navigate3('/peliculas');
-        },500)
+        }, 500)
     }
     let navigate4 = useNavigate();
     const irApedidos = () => {
-        setTimeout( () => {
+        setTimeout(() => {
             navigate4('/pedidos');
-        },500)
+        }, 500)
     }
-    return (
-        <div className='lateral'>
-            <div className='containerLogo'>
-                <div className='logo'></div>
+    let navigate5 = useNavigate();
+    const irAadmin = () => {
+        setTimeout(() => {
+            navigate5('/admin');
+        }, 500)
+    }
+    if (props.credenciales.usuario.rol === true) {
+        return (
+            <div className='lateral'>
+                <div className='containerLogo'>
+                    <div className='logo'></div>
+                </div>
+                <div className='containerEndpoints'>
+                    <h1 className='nombre'>{props.credenciales?.usuario.nick}</h1>
+                    <div className='endpointLateral' onClick={() => irAadmin()}>
+                        <h1 className='Letras'>ADMINISTRADOR</h1>
+                    </div>
+                    <div className='endpointLateral' onClick={() => irApeliculas()}>
+                        <h1 className='Letras'>PELICULAS</h1>
+                    </div>
+                    <div className='endpointLateral' onClick={() => irApedidos()}>
+                        <h1 className='Letras'>PEDIDOS</h1>
+                    </div>
+                    <div className='endpointLateral' onClick={() => irAperfil()}>
+                        <h1 className='Letras'>MODIFICAR PERFIL</h1>
+                    </div>
+                    <div className='endpointLateral' onClick={() => logOut()}>
+                        <h1 className='Letras'>CERRAR SESION</h1>
+                    </div>
+                </div>
             </div>
-            <div className='containerEndpoints'>
-                <h1 className='nombre'>{props.credenciales?.usuario.nick}</h1>
-                <div className='endpointLateral'onClick={() => irApeliculas()}>
-                    <h1 className='Letras'>PELICULAS</h1>
+        )
+    }else{
+        return (
+            <div className='lateral'>
+                <div className='containerLogo'>
+                    <div className='logo'></div>
                 </div>
-                <div className='endpointLateral'onClick={() => irApedidos()}>
-                    <h1 className='Letras'>PEDIDOS</h1>
-                </div>
-                <div className='endpointLateral'onClick={() => irAperfil()}>
-                    <h1 className='Letras'>MODIFICAR PERFIL</h1>
-                </div>
-                <div className='endpointLateral' onClick={() => logOut()}>
-                    <h1 className='Letras'>CERRAR SESION</h1>
+                <div className='containerEndpoints'>
+                    <h1 className='nombre'>{props.credenciales?.usuario.nick}</h1>
+                    <div className='endpointLateral' onClick={() => irApeliculas()}>
+                        <h1 className='Letras'>PELICULAS</h1>
+                    </div>
+                    <div className='endpointLateral' onClick={() => irApedidos()}>
+                        <h1 className='Letras'>PEDIDOS</h1>
+                    </div>
+                    <div className='endpointLateral' onClick={() => irAperfil()}>
+                        <h1 className='Letras'>MODIFICAR PERFIL</h1>
+                    </div>
+                    <div className='endpointLateral' onClick={() => logOut()}>
+                        <h1 className='Letras'>CERRAR SESION</h1>
+                    </div>
                 </div>
             </div>
-        </div>
-    )
-}
+        )
+    };
+};
 
 
-export default connect((state)=>({
+export default connect((state) => ({
     credenciales: state.credenciales
 }))(LateralUsuario);
 

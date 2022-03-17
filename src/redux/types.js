@@ -9,3 +9,4 @@ export const MODIFICAR_CREDENCIALES = 'modificar_credenciales';
 
 export const DETALLE_PELICULA = 'detalle_pelicula';
 export const TITULO_PELICULA = 'titulo_pelicula';
+export const ESTADO_INICIAL = 'estado_inicial';

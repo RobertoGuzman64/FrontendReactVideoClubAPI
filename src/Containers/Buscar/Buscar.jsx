@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 // Redux
 import { connect } from 'react-redux';
-import { TITULO_PELICULA } from '../../redux/types';
+import { TITULO_PELICULA, ESTADO_INICIAL } from '../../redux/types';
 
 import './Buscar.css';
 import LateralUsuario from '../../Components/LateralUsuario/LateralUsuario';
@@ -33,13 +33,14 @@ const Buscar = (props) => {
 
 
     const busquedaPorTitulo = async () => {
-        //Axios que trae resultados....
+        // Axios que trae resultados....
         try {
             let resultados = await axios.get(`https://rgd-videoclub-backend.herokuapp.com/peliculas/titulo/${titulo}`);
             //Guardo en redux los resultados de las películas
             props.dispatch({ type: TITULO_PELICULA, payload: resultados.data });
             // setTimeout(()=>{
-            //     navigate("/searchresults");
+            //     props.dispatch({ type: ESTADO_INICIAL, payload: resultados.data }); esto tienes que poner cuando hagas el boton 
+            //     navigate("/DetallePelicula");                                       de cambio de pantalla
             // },500);
         } catch (error) {
             console.log(error);

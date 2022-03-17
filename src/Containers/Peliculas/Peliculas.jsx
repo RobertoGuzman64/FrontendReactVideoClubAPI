@@ -52,7 +52,7 @@ const Peliculas = (props) => {
     const escogePelicula = (pelicula) => {
         console.log(pelicula);
         props.dispatch({type: DETALLE_PELICULA, payload: pelicula});
-        //Redirigimos a la pagina detallePelicula con navigate
+        //Redirigimos a la pagina DetallePelicula con navigate al Pulsar sobre una pelicula en concreto.
         navigate("/detallePelicula");
     };
 

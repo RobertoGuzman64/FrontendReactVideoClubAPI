@@ -10,8 +10,8 @@
 }
 
 .vistaBuscar {
-    background-color: bisque;
-    height: 70em;
+    background-color: transparent;
+    height: 66.8em;
     width: 100%;
     display: flex;
     flex-wrap: wrap;

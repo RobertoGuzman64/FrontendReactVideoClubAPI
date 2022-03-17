@@ -1,0 +1,20 @@
+.paginaBuscar {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: center;
+    user-select: none;
+}
+
+.vistaBuscar {
+    background-color: bisque;
+    height: 76.8em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

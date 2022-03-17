@@ -42,6 +42,12 @@ const LateralUsuario = (props) => {
             navigate5('/admin');
         }, 500)
     }
+    let navigate6 = useNavigate();
+    const irAbuscar = () => {
+        setTimeout(() => {
+            navigate6('/buscar');
+        }, 500)
+    }
     if (props.credenciales.usuario.rol === true) {
         return (
             <div className='lateral'>
@@ -52,6 +58,9 @@ const LateralUsuario = (props) => {
                     <h1 className='nombre'>{props.credenciales?.usuario.nick}</h1>
                     <div className='endpointLateral' onClick={() => irAadmin()}>
                         <h1 className='Letras'>ADMINISTRADOR</h1>
+                    </div>
+                    <div className='endpointLateral' onClick={() => irAbuscar()}>
+                        <h1 className='Letras'>BUSCAR PELICULA</h1>
                     </div>
                     <div className='endpointLateral' onClick={() => irApeliculas()}>
                         <h1 className='Letras'>PELICULAS</h1>

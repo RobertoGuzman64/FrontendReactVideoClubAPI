@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-// import { useNavigate } from 'react-router-dom';
+// Redux
 import { connect } from 'react-redux';
+
 import './Pedidos.css';
 import axios from 'axios';
 import LateralUsuario from '../../Components/LateralUsuario/LateralUsuario';
@@ -86,5 +87,4 @@ const Pedidos = (props) => {
 
 export default connect((state) => ({
     credenciales: state.credenciales
-    // busqueda : state.busqueda.pelicula
 }))(Pedidos);

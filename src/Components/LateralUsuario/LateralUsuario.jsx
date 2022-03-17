@@ -85,6 +85,9 @@ const LateralUsuario = (props) => {
                 </div>
                 <div className='containerEndpoints'>
                     <h1 className='nombre'>{props.credenciales?.usuario.nick}</h1>
+                    <div className='endpointLateral' onClick={() => irAbuscar()}>
+                        <h1 className='Letras'>BUSCAR PELICULA</h1>
+                    </div>
                     <div className='endpointLateral' onClick={() => irApeliculas()}>
                         <h1 className='Letras'>PELICULAS</h1>
                     </div>

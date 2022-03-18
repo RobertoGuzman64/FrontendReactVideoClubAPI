@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 // Redux
 import { connect } from 'react-redux';
 
@@ -9,7 +10,7 @@ import LateralUsuario from '../../Components/LateralUsuario/LateralUsuario';
 const Pedidos = (props) => {
     // let id = props.credenciales.id
     const [pedidos, setPedidos] = useState([]);
-    // let navigate = useNavigate();
+    let navigate = useNavigate();
     let config = {
         headers: { Authorization: `Bearer ${props.credenciales.token}` }
     };
@@ -23,6 +24,11 @@ const Pedidos = (props) => {
         traerPedidos();
     }, []);
 
+    useEffect(() => {
+        if (props.credenciales.token === '') {
+            navigate("/");
+        }
+    })
 
     // useEffect Personalizado para el Hook de Pedidos.
     useEffect(() => {

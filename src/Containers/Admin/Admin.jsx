@@ -24,6 +24,6 @@ const Admin = (props) => {
     )
 };
 
-export default connect((state)=>({
+export default connect((state) => ({
     credenciales: state.credenciales
 }))(Admin);

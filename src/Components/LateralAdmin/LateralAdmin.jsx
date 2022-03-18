@@ -24,21 +24,28 @@ const LateralAdmin = (props) => {
             navigate1('/usuario');
         }, 500)
     }
+    let navigate2 = useNavigate();
+    const irApedidosAdmin = () => {
+        setTimeout(() => {
+            navigate2('/pedidosadmin');
+        }, 500)
+    }
     return (
         <div className='lateral'>
             <div className='containerLogo'>
                 <div className='logo2'></div>
             </div>
             <div className='containerEndpoints'>
-            <h1 className='nombre'>{props.credenciales?.usuario.nombre}</h1>
-            <div className='endpointLateral' onClick={() => irAusuario()}>
-                        <h1 className='Letras'>IR A USUARIO</h1>
-                    </div>
+                <h1 className='nombre'>{props.credenciales?.usuario.nombre}</h1>
+                <div className='endpointLateral' onClick={() => irAusuario()}>
+                    <h1 className='Letras'>IR A USUARIO</h1>
+                </div>
+                <div className='endpointLateral' onClick={() => irApedidosAdmin()}>
+                    <h1 className='Letras'>PEDIDOS</h1>
+                </div>
                 <div className='endpointLateral'></div>
                 <div className='endpointLateral'></div>
                 <div className='endpointLateral'></div>
-                <div className='endpointLateral'></div>
-                
                 <div className='endpointLateral' onClick={() => logOut()}>
                     <h1 className='Letras'>CERRAR SESION</h1>
                 </div>

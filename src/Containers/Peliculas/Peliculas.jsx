@@ -25,10 +25,14 @@ const Peliculas = (props) => {
         traerPeliculas();
     },[]);
 
+    useEffect(() => {
+        if (props.credenciales.token === '') {
+            navigate("/");
+        }
+    })
 
     // useEffect Personalizado para el Hook de Peliculas.
     useEffect( ()=> {
-        // console.log("vaya, , Peliculas ha cambiado, ", peliculas);
     },[peliculas]);
 
 
@@ -101,4 +105,6 @@ const Peliculas = (props) => {
 
 };
 
-export default connect()(Peliculas);
+export default connect((state) => ({
+    credenciales: state.credenciales
+}))(Peliculas);

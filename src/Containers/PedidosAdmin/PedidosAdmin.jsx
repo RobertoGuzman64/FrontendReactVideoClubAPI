@@ -12,18 +12,6 @@ const PedidosAdmin = (props) => {
     const [pedidos, setPedidos] = useState([]);
     let navigate = useNavigate();
 
-    let body = {
-        id: 11
-    }
-
-    let config = {
-        headers: { Authorization: `Bearer ${props.credenciales.token}` }
-    };
-    // let isAdmin = {
-    //     headers: { Authorization: props.credenciales.rol = true }
-
-    // }
-
     useEffect(() => {
         //No es correcto realizar el try catch en el useEffect
         //dado que el useEffect es en si un proceso con un callback, meter un proceso
@@ -45,6 +33,12 @@ const PedidosAdmin = (props) => {
 
     const traerPedidos = async () => {
         try {
+            let body = {
+                id: props.credenciales.usuario.id
+            }
+            let config = {
+                headers: { Authorization: `Bearer ${props.credenciales.token}` }
+            };
             let res = await axios.post("https://rgd-videoclub-backend.herokuapp.com/pedidos/admin", body, config);
             //Una vez han venido los datos del backend, nosotros, lo siguiente que haremos para que no se pierdan
             //será setear esos datos en el hook, haciendo que las peliculas estén disponibles 
@@ -53,7 +47,6 @@ const PedidosAdmin = (props) => {
             setTimeout(() => {
                 setPedidos(res.data);
             }, 1000);
-
         } catch (error) {
             console.log(error);
         }
@@ -63,7 +56,7 @@ const PedidosAdmin = (props) => {
             <div className='paginaPedidos'>
                 <LateralAdmin />
                 <div className='centro'>
-                    <h1 className='Letras3'>AQUI PUEDES VER LAS PELICULAS QUE HAS ALQUILADO</h1>
+                    <h1 className='Letras3'>AQUI PUEDES VER LOS PEDIDOS DE TODOS LOS USUARIOS</h1>
                     <div className='vistaPedidos'>
                         {
                             //Voy a mapear los Pedidos
@@ -76,7 +69,6 @@ const PedidosAdmin = (props) => {
                                         <p className='Letras'>{pedido.titulo}</p>
                                         <p className='Letras'>{pedido.nombre}</p>
                                         <img className='imagenPelicula' src={pedido.imagen} alt={pedido.titulo} />
-                                        <p>{pedido.sinopsis}</p>
                                     </div>
                                 );
                             })

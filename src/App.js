@@ -13,6 +13,7 @@ import Admin from './Containers/Admin/Admin';
 import Usuario from './Containers/Usuario/Usuario';
 import Buscar from './Containers/Buscar/Buscar';
 import DetallePelicula from './Containers/DetallePelicula/DetallePelicula';
+import PedidosAdmin from './Containers/PedidosAdmin/PedidosAdmin';
 
 // Aqui es donde hacemos la función de navegar entre las distintas páginas de la aplicación.
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path='/DetallePelicula' element={<DetallePelicula/>}/>
         <Route path='/Usuario' element={<Usuario/>}/>
         <Route path='/Buscar' element={<Buscar/>}/>
+        <Route path='/PedidosAdmin' element={<PedidosAdmin/>}/>
       </Routes>
       </BrowserRouter>
     </div>

@@ -31,12 +31,14 @@ const LateralAdmin = (props) => {
             </div>
             <div className='containerEndpoints'>
             <h1 className='nombre'>{props.credenciales?.usuario.nombre}</h1>
-                <div className='endpointLateral'></div>
-                <div className='endpointLateral'></div>
-                <div className='endpointLateral'></div>
-                <div className='endpointLateral' onClick={() => irAusuario()}>
+            <div className='endpointLateral' onClick={() => irAusuario()}>
                         <h1 className='Letras'>IR A USUARIO</h1>
                     </div>
+                <div className='endpointLateral'></div>
+                <div className='endpointLateral'></div>
+                <div className='endpointLateral'></div>
+                <div className='endpointLateral'></div>
+                
                 <div className='endpointLateral' onClick={() => logOut()}>
                     <h1 className='Letras'>CERRAR SESION</h1>
                 </div>

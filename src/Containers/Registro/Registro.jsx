@@ -60,7 +60,7 @@ const Registro = () => {
     return(
         <div className='paginaRegistro'>
             <div className='contenedor3'>
-                    <h2 className='Letras'>Introduce tus datos aqui</h2>
+                    <h2 className='Letras'>Rellena todos los campos aqui por favor.</h2>
                     <input className='input' type="text" name="nombre" id="nombre" title="nombre" placeholder="Nombre:" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <input className='input' type="text" name="apellidos" id="apellidos" title="apellidos" placeholder="Apellidos:" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <input className='input' type="text" name="edad" id="edad" title="edad" placeholder="Edad:" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>

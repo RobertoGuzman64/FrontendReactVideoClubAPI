@@ -36,7 +36,7 @@ const PedidosAdmin = (props) => {
             let body = {
                 id: props.credenciales.usuario.id
             }
-            
+
             let config = {
                 headers: { Authorization: `Bearer ${props.credenciales.token}` }
             };
@@ -67,9 +67,14 @@ const PedidosAdmin = (props) => {
                                     //si le hacemos propiedad onclick y pasamos el elemento como argumento,
                                     //a esa funcion le va a llegar el objeto que hayamos clickado entero
                                     <div className='cardPedidosAdmin' key={index}>
-                                        <p className='Letras'>{pedido.titulo}</p>
-                                        <p className='Letras'>{pedido.nombre}</p>
-                                        <img className='imagenPelicula' src={pedido.imagen} alt={pedido.titulo} />
+                                        <div className='parteIzquierda'>
+                                            <p className='Letras4'>{pedido.nombre}</p>
+                                            <p className='Letras5'>{pedido.email}</p>
+                                        </div>
+                                        <div className='parteDerecha1'>
+                                            <p className='Letras6'>{pedido.titulo}</p>
+                                            <img className='imagenPeliculaAdmin' src={pedido.imagen} alt={pedido.titulo} />
+                                        </div>
                                     </div>
                                 );
                             })

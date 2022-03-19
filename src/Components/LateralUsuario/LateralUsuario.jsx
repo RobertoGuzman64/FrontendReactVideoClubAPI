@@ -63,7 +63,9 @@ const LateralUsuario = (props) => {
                         <img className='icono'></img>
                     </div>
                     <div className='endpointLateral' onClick={() => irAbuscar()}>
+                        <img className='icono1'></img>
                         <h1 className='Letras'>BUSCAR PELICULA</h1>
+                        <img className='icono1'></img>
                     </div>
                     <div className='endpointLateral' onClick={() => irApeliculas()}>
                         <h1 className='Letras'>PELICULAS</h1>

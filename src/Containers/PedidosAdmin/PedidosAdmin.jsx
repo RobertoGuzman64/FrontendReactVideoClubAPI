@@ -53,11 +53,11 @@ const PedidosAdmin = (props) => {
     };
     if (pedidos[0]?.nick !== undefined) {
         return (
-            <div className='paginaPedidos'>
+            <div className='paginaPedidosAdmin'>
                 <LateralAdmin />
                 <div className='centro'>
                     <h1 className='Letras3'>AQUI PUEDES VER LOS PEDIDOS DE TODOS LOS USUARIOS</h1>
-                    <div className='vistaPedidos'>
+                    <div className='vistaPedidosAdmin'>
                         {
                             //Voy a mapear los Pedidos
                             pedidos.map((pedido, index) => {
@@ -65,7 +65,7 @@ const PedidosAdmin = (props) => {
                                     //Al mapear, cada elemento que se itera del array (en este caso pelicula es ese elemento),
                                     //si le hacemos propiedad onclick y pasamos el elemento como argumento,
                                     //a esa funcion le va a llegar el objeto que hayamos clickado entero
-                                    <div className='cardPedidos' key={index}>
+                                    <div className='cardPedidosAdmin' key={index}>
                                         <p className='Letras'>{pedido.titulo}</p>
                                         <p className='Letras'>{pedido.nombre}</p>
                                         <img className='imagenPelicula' src={pedido.imagen} alt={pedido.titulo} />
@@ -79,7 +79,7 @@ const PedidosAdmin = (props) => {
         )
     } else {
         return (
-            <div className='paginaPedidos'>
+            <div className='paginaPedidosAdmin'>
                 <LateralAdmin />
                 <div className='centro'>
                     <div className='vistaPeliculas'>

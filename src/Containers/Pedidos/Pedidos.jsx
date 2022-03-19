@@ -54,7 +54,7 @@ const Pedidos = (props) => {
         return (
             <div className='paginaPedidos'>
                 <LateralUsuario />
-                <div className='centro'>
+                <div className='centro20'>
                     <h1 className='Letras3'>AQUI PUEDES VER LAS PELICULAS QUE HAS ALQUILADO</h1>
                     <div className='vistaPedidos'>
                         {
@@ -80,7 +80,7 @@ const Pedidos = (props) => {
         return (
             <div className='paginaPedidos'>
                 <LateralUsuario />
-                <div className='centro'>
+                <div className='centro20'>
                     <div className='vistaPeliculas'>
                         <div className='espinner'></div>
                     </div>

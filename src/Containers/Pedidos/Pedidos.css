@@ -37,3 +37,11 @@
     border-style: solid;
     border-color: #555a40;
 }
+
+.centro20{
+    background-image: url(/img/pedidos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 76.8em;
+    width: 129em;
+}

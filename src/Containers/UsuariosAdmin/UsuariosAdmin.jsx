@@ -65,12 +65,12 @@ const UsuariosAdmin = (props) => {
                                     //si le hacemos propiedad onclick y pasamos el elemento como argumento,
                                     //a esa funcion le va a llegar el objeto que hayamos clickado entero
                                     <div className='cardUsuariosAdmin' key={index}>
-                                        <div className='parteIzquierda2'>
+                                        <div className='parteIzquierda1'>
                                             <p className='Letras5'>ID : {usuario.id}</p>
                                             <p className='Letras5'>{usuario.email}</p>
                                             <p className='Letras5'>EDAD : {usuario.edad}</p>
                                         </div>
-                                        <div className='partederecha2'>
+                                        <div className='partederecha1'>
                                             <img className='imagen'></img>
                                             <p className='Letras5'>{usuario.nombre}</p>
                                             <p className='Letras5'>{usuario.apellidos}</p>

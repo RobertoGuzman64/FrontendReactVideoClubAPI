@@ -56,7 +56,7 @@ const Buscar = (props) => {
     return (
         <div className='paginaBuscar'>
             <LateralUsuario />
-            <div className='centro'>
+            <div className='centro3'>
                 <div className='buscador'>
                     <input className='input3' placeholder="Busca una Película por Título" autoComplete="off" onChange={(ev) => manejador(ev)} />
                     <button onClick={() => busquedaPorTitulo()} className='botonBusqueda' type='primary'>
@@ -71,9 +71,9 @@ const Buscar = (props) => {
                                 //Al mapear, cada elemento que se itera del array (en este caso pelicula es ese elemento),
                                 //si le hacemos propiedad onclick y pasamos el elemento como argumento,
                                 //a esa funcion le va a llegar el objeto que hayamos clickado entero
-                                <div className='cardPelicula' key={pelicula.id} onClick={() => escogePelicula(pelicula)}>
-                                    <p className='Letras'>{pelicula.titulo}</p>
-                                    <img className='imagenPelicula' src={pelicula.imagen} alt={pelicula.titulo} />
+                                <div className='cardPelicula5' key={pelicula.id} onClick={() => escogePelicula(pelicula)}>
+                                    <p className='Letras9'>{pelicula.titulo}</p>
+                                    <img className='imagenPelicula5' src={pelicula.imagen} alt={pelicula.titulo} />
                                     <p>{pelicula.sinopsis}</p>
                                 </div>
                             );

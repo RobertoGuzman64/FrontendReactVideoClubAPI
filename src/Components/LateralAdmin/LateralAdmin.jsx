@@ -44,7 +44,9 @@ const LateralAdmin = (props) => {
             <div className='containerEndpoints'>
                 <h1 className='nombre'>{props.credenciales?.usuario.nombre}</h1>
                 <div className='endpointLateral' onClick={() => irAusuario()}>
+                    <img className='icono2'></img>
                     <h1 className='Letras'>IR A USUARIO</h1>
+                    <img className='icono2'></img>
                 </div>
                 <div className='endpointLateral' onClick={() => irApedidosAdmin()}>
                     <h1 className='Letras'>PEDIDOS</h1>

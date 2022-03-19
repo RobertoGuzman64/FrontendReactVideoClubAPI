@@ -16,3 +16,13 @@
     height: 76.8em;
     width: 129em;
 }
+
+.icono2 {
+    height: 2em;
+    width: 2em;
+    background-image: url(/img/iconousuario.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0.4em;
+    border-color: transparent;
+}

@@ -67,14 +67,9 @@
 .icono {
     height: 2em;
     width: 2em;
-    background-image: url(/img/logo2.png);
+    background-image: url(/img/iconoadmin.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0.4em;
     border-color: transparent;
-}
-
-.icono:hover{
-    background-color: #c0c0c0;
-    -webkit-text-stroke: 1px #2b2e21;
 }

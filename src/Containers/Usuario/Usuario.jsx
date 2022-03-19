@@ -17,7 +17,7 @@ const Usuario = (props) => {
             <div className='centro'>
                 <h1 className='Letras1'>BIENVENIDO A TU AREA PERSONAL</h1>
                 <div className='vistaUsuario'>
-                    <h1 className='Letras7'>Puedes dirigirte a donde quieras desde la barra de navegación</h1>
+                    <h1 className='Letras7'>PUEDES DIRIGIRTE A DONDE QUIERAS DESDE LA BARRA DE NAVEGACIÓN</h1>
                     <h1 className='Letras7'>PUEDES BUSCAR UNA PELICULA POR TITULO</h1>
                     <h1 className='Letras7'>PUEDES MOSTRAR TODAS LAS PELICULAS QUE TENEMOS</h1>
                     <h1 className='Letras7'>PUEDES VER TUS PEDIDOS</h1>

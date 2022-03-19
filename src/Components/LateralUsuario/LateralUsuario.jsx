@@ -57,7 +57,9 @@ const LateralUsuario = (props) => {
                 <div className='containerEndpoints'>
                     <h1 className='nombre'>{props.credenciales?.usuario.nick}</h1>
                     <div className='endpointLateral' onClick={() => irAadmin()}>
+                        <img className='icono'></img>
                         <h1 className='Letras'>ADMINISTRADOR</h1>
+                        <img className='icono'></img>
                     </div>
                     <div className='endpointLateral' onClick={() => irAbuscar()}>
                         <h1 className='Letras'>BUSCAR PELICULA</h1>

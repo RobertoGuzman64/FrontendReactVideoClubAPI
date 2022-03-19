@@ -1,3 +1,4 @@
+
 .lateral{
     background-color: #c0c0c0;
     height: 76.5em;
@@ -10,7 +11,7 @@
     flex-direction: column;
 }
 
-.containerLogo{
+.containerLogo {
     background-color: transparent;
     height: 10em;
     width: 29em;
@@ -19,7 +20,7 @@
     justify-content: center;
 }
 
-.logo{
+.logo {
     background-image: url(/img/logo.gif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,7 +30,7 @@
     border-color: #555a40;
 }
 
-.containerEndpoints{
+.containerEndpoints {
     background-color: transparent;
     height: 57em;
     width: 29em;
@@ -38,7 +39,7 @@
     flex-direction: column;
 }
 
-.endpointLateral{
+.endpointLateral {
     background-color: #555a4070;
     height: 3em;
     width: 20em;
@@ -51,14 +52,29 @@
     justify-content: center;
     cursor: pointer;
 }
-.endpointLateral:hover{
+.endpointLateral:hover {
     background-color: #c0c0c0;
     -webkit-text-stroke: 1px #2b2e21;
 }
 
-.nombre{
+.nombre {
     font-size: 3em;
     color: #555a40;
     font-family: fantasy;
+    -webkit-text-stroke: 1px #2b2e21;
+}
+
+.icono {
+    height: 2em;
+    width: 2em;
+    background-image: url(/img/logo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0.4em;
+    border-color: transparent;
+}
+
+.icono:hover{
+    background-color: #c0c0c0;
     -webkit-text-stroke: 1px #2b2e21;
 }

@@ -54,7 +54,7 @@ const UsuariosAdmin = (props) => {
         return (
             <div className='paginaUsuariosAdmin'>
                 <LateralAdmin />
-                <div className='centro'>
+                <div className='centro2'>
                     <h1 className='Letras3'>AQUI PUEDES VER TODOS LOS USUARIOS REGISTRADOS</h1>
                     <div className='vistaUsuariosAdmin'>
                         {
@@ -80,7 +80,7 @@ const UsuariosAdmin = (props) => {
         return (
             <div className='paginaUsuariosAdmin'>
                 <LateralAdmin />
-                <div className='centro'>
+                <div className='centro2'>
                     <div className='vistaPeliculas'>
                         <div className='espinner'></div>
                     </div>

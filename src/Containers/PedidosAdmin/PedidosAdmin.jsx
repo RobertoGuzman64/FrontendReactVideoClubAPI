@@ -56,7 +56,7 @@ const PedidosAdmin = (props) => {
         return (
             <div className='paginaPedidosAdmin'>
                 <LateralAdmin />
-                <div className='centro'>
+                <div className='centro2'>
                     <h1 className='Letras3'>AQUI PUEDES VER LOS PEDIDOS DE TODOS LOS USUARIOS</h1>
                     <div className='vistaPedidosAdmin'>
                         {
@@ -82,7 +82,7 @@ const PedidosAdmin = (props) => {
         return (
             <div className='paginaPedidosAdmin'>
                 <LateralAdmin />
-                <div className='centro'>
+                <div className='centro2'>
                     <div className='vistaPeliculas'>
                         <div className='espinner'></div>
                     </div>

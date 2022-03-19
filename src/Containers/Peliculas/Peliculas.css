@@ -57,6 +57,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border-style: solid;
+    border-color: #555a40;
 }
 
 .espinner{

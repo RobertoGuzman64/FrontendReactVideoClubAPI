@@ -36,7 +36,7 @@ const UsuariosAdmin = (props) => {
             let config = {
                 headers: { Authorization: `Bearer ${props.credenciales.token}` }
             };
-            
+
             let res = await axios.get("https://rgd-videoclub-backend.herokuapp.com/usuarios", config);
             //Una vez han venido los datos del backend, nosotros, lo siguiente que haremos para que no se pierdan
             //será setear esos datos en el hook, haciendo que las peliculas estén disponibles 
@@ -45,7 +45,7 @@ const UsuariosAdmin = (props) => {
             setTimeout(() => {
                 setUsuarios(res.data);
             }, 1000);
-            console.log("Dale papaya",res.data)
+            console.log("Dale papaya", res.data)
         } catch (error) {
             console.log(error);
         }
@@ -65,9 +65,16 @@ const UsuariosAdmin = (props) => {
                                     //si le hacemos propiedad onclick y pasamos el elemento como argumento,
                                     //a esa funcion le va a llegar el objeto que hayamos clickado entero
                                     <div className='cardUsuariosAdmin' key={index}>
-                                        <p className='Letras'>{usuario.nombre}</p>
-                                        <p className='Letras'>{usuario.email}</p>
-                                        <img className='imagenPelicula' src={usuario.apellidos} alt={usuario.nick} />
+                                        <div className='parteIzquierda2'>
+                                            <p className='Letras5'>ID : {usuario.id}</p>
+                                            <p className='Letras5'>{usuario.email}</p>
+                                            <p className='Letras5'>EDAD : {usuario.edad}</p>
+                                        </div>
+                                        <div className='partederecha2'>
+                                            <img className='imagen'></img>
+                                            <p className='Letras5'>{usuario.nombre}</p>
+                                            <p className='Letras5'>{usuario.apellidos}</p>
+                                        </div>
                                     </div>
                                 );
                             })

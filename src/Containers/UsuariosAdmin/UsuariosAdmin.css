@@ -21,18 +21,28 @@
 }
 
 .cardUsuariosAdmin {
-    height: 25em;
+    height: 20em;
     width: 25em;
     background-color: #c0c0c0;
     margin: .2em;
     border-radius: .5em;
-    padding: .2em;
+    padding: .8em;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
     font-weight: bold;
+    border-style: solid;
+    border-color: #555a40;
+}
+
+.imagen{
+    height: 12em;
+    width: 12em;
+    margin-top: 2em;
+    background-image: url(/img/usuario2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     border-style: solid;
     border-color: #555a40;
 }

@@ -74,7 +74,7 @@ const Buscar = (props) => {
                                 <div className='cardPelicula5' key={pelicula.id} onClick={() => escogePelicula(pelicula)}>
                                     <p className='Letras9'>{pelicula.titulo}</p>
                                     <img className='imagenPelicula5' src={pelicula.imagen} alt={pelicula.titulo} />
-                                    <p>{pelicula.sinopsis}</p>
+                                    <p className='Letras6'>{pelicula.sinopsis}</p>
                                 </div>
                             );
                         })

@@ -25,11 +25,17 @@
 }
 
 .vistaUsuario{
-    background-color: bisque;
+    background-color: transparent;
     height: 61.5em;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.Letras7{
+    color: #c0c0c0;
+    font-family: fantasy;
+    font-size: 3em;
 }

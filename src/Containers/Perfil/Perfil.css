@@ -32,3 +32,11 @@
     color: #c0c0c0;
     margin-block-end: 2em;
 }
+
+.centro7{
+    background-image: url(/img/perfil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 76.8em;
+    width: 129em;
+}

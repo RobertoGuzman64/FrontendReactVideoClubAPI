@@ -55,7 +55,7 @@ const Perfil = (props) => {
     return(
         <div className='paginaPerfil'>
             <LateralUsuario/>
-            <div className='centro'>
+            <div className='centro7'>
                 <div className='vistaPerfil'>
                     <h2 className='Letras3'>INTRODUCE LOS DATOS QUE QUIERAS MODIFICAR AQUI</h2>
                     <input className='input2' type="text" name="nombre" id="nombre" title="nombre" placeholder={`Nombre:  ${props.credenciales.usuario.nombre}`} autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>

@@ -17,8 +17,6 @@ const Perfil = (props) => {
         nombre: props.credenciales.usuario.nombre,
         edad: props.credenciales.usuario.edad,
         apellidos: props.credenciales.usuario.apellidos,
-        email: props.credenciales.usuario.email,
-        contraseña: props.credenciales.usuario.contraseña,
         nick: props.credenciales.usuario.nick
     })
     // Handler (Manejador).
@@ -33,14 +31,13 @@ const Perfil = (props) => {
     })
     const actualizaUsuario = async () => {
         let body = {
-            id: datosUsuario.id,
+            id: props.credenciales.usuario.id,
             nombre: datosUsuario.nombre,
             edad: datosUsuario.edad,
             apellidos: datosUsuario.apellidos,
-            email: datosUsuario.email,
-            contraseña: datosUsuario.contraseña,
             nick: datosUsuario.nick
         }
+        console.log("papayote",body)
         let config = {
             headers: { Authorization: `Bearer ${props.credenciales.token}`}
         };

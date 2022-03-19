@@ -36,6 +36,7 @@ const PedidosAdmin = (props) => {
             let body = {
                 id: props.credenciales.usuario.id
             }
+            
             let config = {
                 headers: { Authorization: `Bearer ${props.credenciales.token}` }
             };

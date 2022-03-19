@@ -1,0 +1,38 @@
+.paginaUsuariosAdmin {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: center;
+    user-select: none;
+}
+
+.vistaUsuariosAdmin {
+    background-color: transparent;
+    height: 70em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.cardUsuariosAdmin {
+    height: 25em;
+    width: 25em;
+    background-color: #c0c0c0;
+    margin: .2em;
+    border-radius: .5em;
+    padding: .2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    border-style: solid;
+    border-color: #555a40;
+}

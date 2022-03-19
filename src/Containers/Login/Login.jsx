@@ -74,9 +74,9 @@ const Login = (props) => {
     // 2 - Render (Lo que pinta en Pantalla).
     return(
         <div className='paginaLogin'>
-            <div className='parteIzquierda1'>
+            <div className='parteIzquierda2'>
                 <div className='contenedor1'>
-                    <h1 className='Letras'>Introduce tus datos</h1>
+                    <h1 className='Letras'>Introduce tus datos...</h1>
                     {/* {<pre>{JSON.stringify(datosUsuario, null,2)}</pre>} */}
                     <div className='inputs'>
                         <input className='input' type="email" name="email" id="email" title="email" placeholder="Correo Electrónico" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
@@ -101,7 +101,7 @@ const Login = (props) => {
                 </div>
                 </div>
             </div>
-            <div className='parteDerecha1'></div>
+            <div className='parteDerecha2'></div>
         </div>
     );
 };

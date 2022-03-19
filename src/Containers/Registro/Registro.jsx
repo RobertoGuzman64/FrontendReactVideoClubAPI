@@ -11,19 +11,8 @@ const Registro = () => {
         nombre: '', edad: '', apellidos: '', email: '', contraseña: '', contraseña2: '', nick: '', rol: false
     });
     const [ msgError, setMsgError ] = useState('');
-    // useEffect
-    useEffect( ()=> {
-        // Se ejecuta la primera vez.
-    },[]);
-    useEffect( ()=> {
-        // Se ejecuta cada vez que se acualiza cualquier Hook.
-    })
-        // useEffect(()=>{
-    //     //useEffect observable que sólo se ejecutará cuando
-    //     //datosUsuario mute
-    // },
-    // [datosUsuario])
-    //Handler (manejador)
+
+    // //Handler (manejador)
     const rellenarDatos = (e) => {
         setDatosUsuario({...datosUsuario,[e.target.name]: e.target.value})
     };
@@ -76,8 +65,8 @@ const Registro = () => {
                     <input className='input' type="text" name="apellidos" id="apellidos" title="apellidos" placeholder="Apellidos:" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <input className='input' type="text" name="edad" id="edad" title="edad" placeholder="Edad:" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <input className='input' type="email" name="email" id="email" title="email" placeholder="Correo Electrónico:" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
-                    <input className='input' type="password" name="contraseña" id="password" title="password" placeholder="Contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
-                    <input className='input' type="password" name="contraseña2" id="password2" title="password2" placeholder="Repite contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                    <input className='input' type="text" name="contraseña" id="password" title="password" placeholder="Contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
+                    <input className='input' type="text" name="contraseña2" id="password2" title="password2" placeholder="Repite contraseña" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <input className='input' type="text" name="nick" id="nick" title="nick" placeholder="Elige un Nick" autoComplete="off" onChange={(e)=>{rellenarDatos(e)}}/>
                     <div className="boton" onClick={()=>registrame()}>
                         Registrarme

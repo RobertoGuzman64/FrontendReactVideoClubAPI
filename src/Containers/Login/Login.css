@@ -68,4 +68,5 @@
 .mostrarContraseña {
     background-color: transparent;
     border: 2px solid #555a40;
+    border-radius: 10px;
 }

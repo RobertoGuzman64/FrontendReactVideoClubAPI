@@ -79,8 +79,7 @@ const Peliculas = (props) => {
                                     <div className='cardPelicula' key={pelicula.id} onClick={()=>escogePelicula(pelicula)}>
                                         <p className='Letras'>{pelicula.titulo}</p>
                                         <img className='imagenPelicula' src={pelicula.imagen} alt={pelicula.titulo}/>
-                                        
-                                        <p>{pelicula.sinopsis}</p>
+                                        <p className='Letras6'>{pelicula.sinopsis}</p>
                                     </div>
                                 );
                             })

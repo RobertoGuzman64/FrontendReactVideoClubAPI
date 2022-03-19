@@ -10,7 +10,7 @@
     user-select: none;
 }
 
-.vistaPeliculas{
+.vistaPeliculas {
     background-color: transparent;
     height: 70em;
     width: 100%;
@@ -21,7 +21,7 @@
     overflow-y: scroll;
 }
 
-.Letras3{
+.Letras3 {
     color: #c0c0c0;
     font-family: fantasy;
     font-size: 2.5em;
@@ -45,8 +45,8 @@
     border-style: solid;
     border-color: #555a40;
 }
-.cardPelicula:hover{
-    background-color: #404431;
+.cardPelicula:hover {
+    background-color: #4d523a;
 }
 .imagenPelicula {
     height: 17em;
@@ -61,7 +61,7 @@
     border-color: #555a40;
 }
 
-.espinner{
+.espinner {
     height: 30em;
     width: 30em;
     background-image:url(/img/espinner.gif);

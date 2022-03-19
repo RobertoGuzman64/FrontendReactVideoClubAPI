@@ -1,7 +1,7 @@
 
 import './App.css';
 
-// Aqui indicamos las direcciones de las páginas de la aplicación.
+// Aqui inportamos las direcciones de las páginas de la aplicación.
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Containers/Home/Home';
 import Login from './Containers/Login/Login';
@@ -14,6 +14,7 @@ import Usuario from './Containers/Usuario/Usuario';
 import Buscar from './Containers/Buscar/Buscar';
 import DetallePelicula from './Containers/DetallePelicula/DetallePelicula';
 import PedidosAdmin from './Containers/PedidosAdmin/PedidosAdmin';
+import UsuariosAdmin from './Containers/UsuariosAdmin/UsuariosAdmin';
 
 // Aqui es donde hacemos la función de navegar entre las distintas páginas de la aplicación.
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path='/Usuario' element={<Usuario/>}/>
         <Route path='/Buscar' element={<Buscar/>}/>
         <Route path='/PedidosAdmin' element={<PedidosAdmin/>}/>
+        <Route path='/UsuariosAdmin' element={<UsuariosAdmin/>}/>
       </Routes>
       </BrowserRouter>
     </div>

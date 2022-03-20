@@ -40,7 +40,7 @@
 }
 
 .endpointLateral {
-    background-color: #555a4070;
+    background-color: #c0c0c0;
     height: 3em;
     width: 20em;
     margin-top: 2em;
@@ -56,6 +56,11 @@
     background-color: #c0c0c0;
     -webkit-text-stroke: 1px #2b2e21;
 }
+
+
+
+
+
 
 .nombre {
     font-size: 3em;

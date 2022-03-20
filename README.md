@@ -1,4 +1,4 @@
-# Proyecto VideoClub Frontend de React.
+# Proyecto VideoClub Frontend de React para....
 ***
 ![Vista Principal de la APP de React](./img/geekhubs.png)
 ***
@@ -90,7 +90,7 @@ El directorio **src** es donde está almacenada toda la aplicación. En este dir
     * **reducers**: En este directorio se encuentran todos los reducers que modifican el estado:
         * **index.js**: En este archivo combinamos todos los reducers, para conseguir la centralización deseada de estados con redux.
         * **datosLogin-reducer.js**: En este archivo tenemos las funciones que editan el estado de redux para los types LOGIN, LOGOUT y MODIFICAR_CREDENCIALES.
-        * **busquedaPeliculas-reducer.js**: En este archivo se encuentra la función que edita el estado de redux para el type DETALLE_PELICULA, TITULO_PELICULA, ESTADO_INICIAL Guarda en redux el listado de películas buscado, y también el filtrado que se hace en las barras de búsqueda, y devuelve el estado inicial para hacer otra búsqueda.
+        * **busquedaPeliculas-reducer.js**: En este archivo se encuentra la función que edita el estado de redux para el type DETALLE_PELICULA, TITULO_PELICULA, ESTADO_INICIAL Guarda en redux los datos de las películas y devuelve el estado inicial para hacer otra búsqueda.
 
 * **Containers**: En este directorio es donde se guardarán las diferentes vistas:
     * **Usuario**: En esta vista tenemos las indicaciones de lo que puede hacer el usuario además de la bienvenida.
@@ -109,4 +109,6 @@ El directorio **src** es donde está almacenada toda la aplicación. En este dir
     * **LateralUsuario**: Es el menú que aparece en la parte lateral de la aplicación cuando nos logeamos como Usuario.
     * **LateralAdmin**: Es el menú que aparece en la parte lateral de la aplicación cuando nos logeamos como Administrador.
 * **img**: En este directorio se guardan todas las imágenes que se usarán para la aplicación y para el readme.
-
+***
+![Vista Principal de la APP de React](./img/react%26heroku.jpg)
+***

@@ -72,7 +72,7 @@ const Buscar = (props) => {
                                 //si le hacemos propiedad onclick y pasamos el elemento como argumento,
                                 //a esa funcion le va a llegar el objeto que hayamos clickado entero
                                 <div className='cardPelicula5' key={pelicula.id} onClick={() => escogePelicula(pelicula)}>
-                                    <p className='Letras9'>{pelicula.titulo}</p>
+                                    <p className='Letras5'>{pelicula.titulo}</p>
                                     <img className='imagenPelicula5' src={pelicula.imagen} alt={pelicula.titulo} />
                                     <p className='Letras6'>{pelicula.sinopsis}</p>
                                 </div>

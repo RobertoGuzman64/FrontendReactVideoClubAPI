@@ -65,7 +65,7 @@ const Pedidos = (props) => {
                                     //si le hacemos propiedad onclick y pasamos el elemento como argumento,
                                     //a esa funcion le va a llegar el objeto que hayamos clickado entero
                                     <div className='cardPedidos' key={index}>
-                                        <p className='Letras'>{pedido.titulo}</p>
+                                        <p className='Letras5'>{pedido.titulo}</p>
                                         <img className='imagenPelicula' src={pedido.imagen} alt={pedido.titulo} />
                                         <p>{pedido.sinopsis}</p>
                                     </div>

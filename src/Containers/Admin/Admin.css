@@ -50,3 +50,11 @@
     font-size: 3em;
     -webkit-text-stroke: 0.7px #2b2e21;
 }
+
+.espinner2 {
+    height: 30em;
+    width: 30em;
+    background-image:url(/img/espinner2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

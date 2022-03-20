@@ -89,7 +89,7 @@ const UsuariosAdmin = (props) => {
                 <LateralAdmin />
                 <div className='centro2'>
                     <div className='vistaPeliculas'>
-                        <div className='espinner'></div>
+                        <div className='espinner2'></div>
                     </div>
                 </div>
             </div>

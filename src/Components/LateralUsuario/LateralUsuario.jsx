@@ -68,7 +68,9 @@ const LateralUsuario = (props) => {
                         <img className='icono1'></img>
                     </div>
                     <div className='endpointLateral' onClick={() => irApeliculas()}>
+                        <img className='icono1'></img>
                         <h1 className='Letras'>PELICULAS</h1>
+                        <img className='icono1'></img>
                     </div>
                     <div className='endpointLateral' onClick={() => irApedidos()}>
                         <h1 className='Letras'>PEDIDOS</h1>
@@ -82,7 +84,7 @@ const LateralUsuario = (props) => {
                 </div>
             </div>
         )
-    }else{
+    } else {
         return (
             <div className='lateral'>
                 <div className='containerLogo'>

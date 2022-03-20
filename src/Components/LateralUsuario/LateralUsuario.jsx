@@ -83,7 +83,9 @@ const LateralUsuario = (props) => {
                         <img className='icono4'></img>
                     </div>
                     <div className='endpointLateral' onClick={() => logOut()}>
+                        <img className='icono5'></img>
                         <h1 className='Letras'>CERRAR SESION</h1>
+                        <img className='icono5'></img>
                     </div>
                 </div>
             </div>

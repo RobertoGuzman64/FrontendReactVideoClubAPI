@@ -10,21 +10,21 @@
     user-select: none;
 }
 
-.Letras1{
+.Letras1 {
     color: #c0c0c0;
     font-family: fantasy;
     font-size: 6em;
 }
 
-.centro{
-    background-image: url(/img/usuario.jpg);
+.centroUsuario {
+    background-image: url(/img/usuario1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 76.8em;
     width: 129em;
 }
 
-.vistaUsuario{
+.vistaUsuario {
     background-color: transparent;
     height: 61.5em;
     width: 100%;
@@ -34,7 +34,7 @@
     flex-direction: column;
 }
 
-.Letras7{
+.Letras7 {
     color: #c0c0c0;
     font-family: fantasy;
     font-size: 3em;

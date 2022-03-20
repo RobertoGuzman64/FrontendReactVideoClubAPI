@@ -10,6 +10,14 @@
     user-select: none;
 }
 
+.centro {
+    background-image: url(/img/usuario.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 76.8em;
+    width: 129em;
+}
+
 .vistaPeliculas {
     background-color: transparent;
     height: 70em;

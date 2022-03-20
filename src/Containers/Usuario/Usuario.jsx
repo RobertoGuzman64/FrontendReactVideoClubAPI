@@ -14,7 +14,7 @@ const Usuario = (props) => {
     return (
         <div className='paginaUsuario'>
             <LateralUsuario />
-            <div className='centro'>
+            <div className='centroUsuario'>
                 <h1 className='Letras1'>BIENVENIDO A TU AREA PERSONAL</h1>
                 <div className='vistaUsuario'>
                     <h1 className='Letras7'>PUEDES DIRIGIRTE A DONDE QUIERAS DESDE LA BARRA DE NAVEGACIÓN</h1>

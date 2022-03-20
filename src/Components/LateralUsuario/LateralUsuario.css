@@ -49,7 +49,7 @@
     border-radius: 15px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     cursor: pointer;
 }
 .endpointLateral:hover {

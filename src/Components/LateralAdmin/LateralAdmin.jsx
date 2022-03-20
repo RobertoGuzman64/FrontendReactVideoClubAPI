@@ -54,8 +54,6 @@ const LateralAdmin = (props) => {
                 <div className='endpointLateral' onClick={() => irAusuariosAdmin()}>
                     <h1 className='Letras'>USUARIOS</h1>
                 </div>
-                <div className='endpointLateral'></div>
-                <div className='endpointLateral'></div>
                 <div className='endpointLateral' onClick={() => logOut()}>
                     <h1 className='Letras'>CERRAR SESION</h1>
                 </div>

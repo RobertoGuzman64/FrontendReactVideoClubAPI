@@ -15,14 +15,14 @@ const Usuario = (props) => {
         <div className='paginaUsuario'>
             <LateralUsuario />
             <div className='centroUsuario'>
-                <h1 className='Letras1'>BIENVENIDO A TU AREA PERSONAL</h1>
+                <h1 className='Letras11'>BIENVENIDO A TU AREA PERSONAL</h1>
                 <div className='vistaUsuario'>
-                    <h1 className='Letras7'>PUEDES DIRIGIRTE A DONDE QUIERAS DESDE LA BARRA DE NAVEGACIÓN</h1>
-                    <h1 className='Letras7'>PUEDES BUSCAR UNA PELICULA POR TITULO</h1>
-                    <h1 className='Letras7'>PUEDES MOSTRAR TODAS LAS PELICULAS QUE TENEMOS</h1>
-                    <h1 className='Letras7'>PUEDES VER TUS PEDIDOS</h1>
-                    <h1 className='Letras7'>PUEDES MODIFICAR TU PERFIL</h1>
-                    <h1 className='Letras7'>PUEDES CERRAR SESION Y VOLVER CUANDO QUIERAS</h1>
+                    <h1 className='Letras77'>PUEDES DIRIGIRTE A DONDE QUIERAS DESDE LA BARRA DE NAVEGACIÓN</h1>
+                    <h1 className='Letras77'>PUEDES BUSCAR UNA PELICULA POR TITULO</h1>
+                    <h1 className='Letras77'>PUEDES MOSTRAR TODAS LAS PELICULAS QUE TENEMOS</h1>
+                    <h1 className='Letras77'>PUEDES VER TUS PEDIDOS</h1>
+                    <h1 className='Letras77'>PUEDES MODIFICAR TU PERFIL</h1>
+                    <h1 className='Letras77'>PUEDES CERRAR SESION Y VOLVER CUANDO QUIERAS</h1>
                 </div>
             </div>
         </div>

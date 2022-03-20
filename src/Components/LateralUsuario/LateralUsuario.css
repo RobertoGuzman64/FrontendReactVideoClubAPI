@@ -59,9 +59,9 @@
 
 .nombre {
     font-size: 3em;
-    color: #555a40;
+    color: #60664a;
     font-family: fantasy;
-    -webkit-text-stroke: 1px #2b2e21;
+    -webkit-text-stroke: 0.7px #2b2e21;
 }
 
 .icono {

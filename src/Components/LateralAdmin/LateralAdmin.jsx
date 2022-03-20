@@ -49,13 +49,19 @@ const LateralAdmin = (props) => {
                     <img className='icono2'></img>
                 </div>
                 <div className='endpointLateral' onClick={() => irApedidosAdmin()}>
+                    <img className='icono3'></img>
                     <h1 className='Letras'>PEDIDOS</h1>
+                    <img className='icono3'></img>
                 </div>
                 <div className='endpointLateral' onClick={() => irAusuariosAdmin()}>
+                    <img className='icono6'></img>
                     <h1 className='Letras'>USUARIOS</h1>
+                    <img className='icono6'></img>
                 </div>
                 <div className='endpointLateral' onClick={() => logOut()}>
+                    <img className='icono5'></img>
                     <h1 className='Letras'>CERRAR SESION</h1>
+                    <img className='icono5'></img>
                 </div>
             </div>
         </div>

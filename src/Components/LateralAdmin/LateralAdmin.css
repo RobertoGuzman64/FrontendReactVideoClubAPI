@@ -26,3 +26,13 @@
     margin: 0.4em;
     border-color: transparent;
 }
+
+.icono6 {
+    height: 2em;
+    width: 2em;
+    background-image: url(/img/iconousuarios.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0.4em;
+    border-color: transparent;
+}

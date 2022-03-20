@@ -99,19 +99,29 @@ const LateralUsuario = (props) => {
                 <div className='containerEndpoints'>
                     <h1 className='nombre'>{props.credenciales?.usuario.nick}</h1>
                     <div className='endpointLateral' onClick={() => irAbuscar()}>
+                        <img className='icono1'></img>
                         <h1 className='Letras'>BUSCAR PELICULA</h1>
+                        <img className='icono1'></img>
                     </div>
                     <div className='endpointLateral' onClick={() => irApeliculas()}>
+                        <img className='icono1'></img>
                         <h1 className='Letras'>PELICULAS</h1>
+                        <img className='icono1'></img>
                     </div>
                     <div className='endpointLateral' onClick={() => irApedidos()}>
+                        <img className='icono3'></img>
                         <h1 className='Letras'>PEDIDOS</h1>
+                        <img className='icono3'></img>
                     </div>
                     <div className='endpointLateral' onClick={() => irAperfil()}>
+                        <img className='icono4'></img>
                         <h1 className='Letras'>MODIFICAR PERFIL</h1>
+                        <img className='icono4'></img>
                     </div>
                     <div className='endpointLateral' onClick={() => logOut()}>
+                        <img className='icono5'></img>
                         <h1 className='Letras'>CERRAR SESION</h1>
+                        <img className='icono5'></img>
                     </div>
                 </div>
             </div>

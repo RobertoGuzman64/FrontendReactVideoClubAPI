@@ -69,6 +69,9 @@ npm i react-redux
 ```
 npm i react-icons
 ```
+***
+![Vista Inicial APP React](./img/react.png)
+***
 
 ## Explicación de la estructura del proyecto
 
@@ -103,3 +106,4 @@ El directorio **src** es donde está almacenada toda la aplicación. En este dir
     * **LateralUsuario**: Es el menú que aparece en la parte lateral de la aplicación cuando nos logeamos como Usuario.
     * **LateralAdmin**: Es el menú que aparece en la parte lateral de la aplicación cuando nos logeamos como Administrador.
 * **img**: En este directorio se guardan todas las imágenes que se usarán para la aplicación y para el readme.
+

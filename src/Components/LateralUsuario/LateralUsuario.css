@@ -46,7 +46,7 @@
     margin-top: 2em;
     border-style: solid;
     border-color: #555a40;
-    border-radius: 5px;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,11 +56,6 @@
     background-color: #c0c0c0;
     -webkit-text-stroke: 1px #2b2e21;
 }
-
-
-
-
-
 
 .nombre {
     font-size: 3em;
@@ -113,6 +108,16 @@
     height: 2em;
     width: 2em;
     background-image: url(/img/iconologout.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0.4em;
+    border-color: transparent;
+}
+
+.icono7 {
+    height: 2em;
+    width: 2em;
+    background-image: url(/img/iconobuscar.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0.4em;

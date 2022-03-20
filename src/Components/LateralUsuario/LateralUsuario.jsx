@@ -63,9 +63,9 @@ const LateralUsuario = (props) => {
                         <img className='icono'></img>
                     </div>
                     <div className='endpointLateral' onClick={() => irAbuscar()}>
-                        <img className='icono1'></img>
+                        <img className='icono7'></img>
                         <h1 className='Letras'>BUSCAR PELICULA</h1>
-                        <img className='icono1'></img>
+                        <img className='icono7'></img>
                     </div>
                     <div className='endpointLateral' onClick={() => irApeliculas()}>
                         <img className='icono1'></img>
@@ -99,9 +99,9 @@ const LateralUsuario = (props) => {
                 <div className='containerEndpoints'>
                     <h1 className='nombre'>{props.credenciales?.usuario.nick}</h1>
                     <div className='endpointLateral' onClick={() => irAbuscar()}>
-                        <img className='icono1'></img>
+                        <img className='icono7'></img>
                         <h1 className='Letras'>BUSCAR PELICULA</h1>
-                        <img className='icono1'></img>
+                        <img className='icono7'></img>
                     </div>
                     <div className='endpointLateral' onClick={() => irApeliculas()}>
                         <img className='icono1'></img>

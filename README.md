@@ -1,4 +1,7 @@
 # Proyecto VideoClub Frontend de React.
+***
+![Vista Principal de la APP de React](./img/geekhubs.png)
+***
 ## Repositorio en el que se a estado trabajando el proyecto. 
 ## https://github.com/RobertoGuzman64/Proyecto5.git.
 ***

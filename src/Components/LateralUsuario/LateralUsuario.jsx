@@ -73,7 +73,9 @@ const LateralUsuario = (props) => {
                         <img className='icono1'></img>
                     </div>
                     <div className='endpointLateral' onClick={() => irApedidos()}>
+                        <img className='icono3'></img>
                         <h1 className='Letras'>PEDIDOS</h1>
+                        <img className='icono3'></img>
                     </div>
                     <div className='endpointLateral' onClick={() => irAperfil()}>
                         <h1 className='Letras'>MODIFICAR PERFIL</h1>

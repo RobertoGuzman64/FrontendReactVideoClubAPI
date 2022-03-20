@@ -87,20 +87,18 @@ El directorio **src** es donde está almacenada toda la aplicación. En este dir
         * **busquedaPeliculas-reducer.js**: En este archivo se encuentra la función que edita el estado de redux para el type DETALLE_PELICULA, TITULO_PELICULA, ESTADO_INICIAL Guarda en redux el listado de películas buscado, y también el filtrado que se hace en las barras de búsqueda, y devuelve el estado inicial para hacer otra búsqueda.
 
 * **Containers**: En este directorio es donde se guardarán las diferentes vistas:
-    **Containers que usa el Usuario**:
-      * **Usuario**: En esta vista tenemos las indicaciones de lo que puede hacer el usuario además de la bienvenida.
-      * **Pedidos**: En esta vista se ve el listado de pedidos realizados por ese mismo Usuario.
-      * **Buscar**: En esta vista se puede buscar una película por título y además te redirige para poder alquilarla.
-      * **Home**: En esta vista tenemos la primera toma de contacto con la aplicación.
-      * **Login**: En esta vista tenemos la posibilidad de loguearse o poder redirigir a registro.
-      * **Registro**: En esta vista tenemos la posibilidad de introducir los datos para hacer el registro en la app.
-      * **Perfil**: En esta vista se muestran los datos del usuario logeado y puede modificar sus datos.
-      * **Peliculas**: En esta vista se visualizan todas las películas del videoclub y además te redirige para poder alquilarla.
-      * **DetallePelicula**: En esta vista una vez redirigida por Buscar o por Peliculas tenemos el acceso al boton de alquilar cualquier pelicula que hayamos seleccionado previamente.
-    **Containers que usa el Administrador**:
-      * **Admin**: En esta vista tenemos las indicaciones de lo que puede hacer el administrador además de la bienvenida.
-      * **UsuariosAdmin**: En esta vista se visualizan todos usuarios registrados del videoclub.
-      * **PedidosAdmin**: En esta vista se visualizan todos pedidos de todos los usuarios del videoclub.
+    * **Usuario**: En esta vista tenemos las indicaciones de lo que puede hacer el usuario además de la bienvenida.
+    * **Pedidos**: En esta vista se ve el listado de pedidos realizados por ese mismo Usuario.
+    * **Buscar**: En esta vista se puede buscar una película por título y además te redirige para poder alquilarla.
+    * **Home**: En esta vista tenemos la primera toma de contacto con la aplicación.
+    * **Login**: En esta vista tenemos la posibilidad de loguearse o poder redirigir a registro.
+    * **Registro**: En esta vista tenemos la posibilidad de introducir los datos para hacer el registro en la app.
+    * **Perfil**: En esta vista se muestran los datos del usuario logeado y puede modificar sus datos.
+    * **Peliculas**: En esta vista se visualizan todas las películas del videoclub y además te redirige para poder alquilarla.
+    * **DetallePelicula**: En esta vista una vez redirigida por Buscar o por Peliculas tenemos el acceso al boton de alquilar cualquier pelicula que hayamos seleccionado previamente.
+    * **Admin**: En esta vista tenemos las indicaciones de lo que puede hacer el administrador además de la bienvenida.
+    * **UsuariosAdmin**: En esta vista se visualizan todos usuarios registrados del videoclub.
+    * **PedidosAdmin**: En esta vista se visualizan todos pedidos de todos los usuarios del videoclub.
 * **Components**: En este directorio es donde se guardan todos los componentes que se usarán en todas las vistas:
     * **LateralUsuario**: Es el menú que aparece en la parte lateral de la aplicación cuando nos logeamos como Usuario.
     * **LateralAdmin**: Es el menú que aparece en la parte lateral de la aplicación cuando nos logeamos como Administrador.

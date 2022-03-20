@@ -9,7 +9,7 @@
     flex-direction: center;
 }
 
-.logo2{
+.logo2 {
     background-image: url(/img/logo2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,7 +19,7 @@
     border-color: #555a40;
 }
 
-.centro2{
+.centro2 {
     background-image: url(/img/admin2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,7 +27,7 @@
     width: 129em;
 }
 
-.vistaAdministrador{
+.vistaAdministrador {
     background-color: transparent;
     height: 61.5em;
     width: 100%;
@@ -35,4 +35,17 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.Letras11 {
+    color: #c0c0c0;
+    font-family: fantasy;
+    font-size: 6em;
+}
+
+.Letras77 {
+    color: #c0c0c0;
+    font-family: fantasy;
+    font-size: 3em;
+    -webkit-text-stroke: 0.7px #2b2e21;
 }
